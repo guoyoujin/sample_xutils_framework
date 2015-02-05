@@ -95,10 +95,9 @@ public class DoctorLoginActivity extends BaseActivity {
 		doctorLoginNameEditText.setText(sp_login.getString("user_name", ""));
 		doctorLoginPasswordEditText.setText(sp_login.getString("password", ""));
 		logingFlg=sp_login.getBoolean("flg", false);
-		user_name=doctorLoginNameEditText.getText().toString().trim();
-		password=doctorLoginPasswordEditText.getText().toString().trim();
+	
 	}
-	public void http_get_doctor_Login(String username, String password){
+	public void http_get_doctor_Login(final String username, final String password){
 		RequestParams params=new RequestParams();
 		params.addBodyParameter("username", username);
 		params.addBodyParameter("password", password);
@@ -118,9 +117,10 @@ public class DoctorLoginActivity extends BaseActivity {
 						AppContext.REMEMBER_TOKEN=jsonObject2.optString("remember_token");
 						Log.e("TAG", AppContext.REMEMBER_TOKEN);
 						Doctor doctor = JsonUtil.fromJson(jsonObject2.getString("doctor"), Doctor.class);
-						edt.putString("user_name", jsonObject.optString("name"));
-						edt.putString("password", doctorLoginPasswordEditText.getText().toString().trim());
+						edt.putString("user_name", username);
+						edt.putString("password", password);
 						edt.putBoolean("flg",true);
+						edt.commit();
 						Log.e("TAG", doctor.toString());
 						Message msg=new Message();
 						msg.what=0;
@@ -142,6 +142,8 @@ public class DoctorLoginActivity extends BaseActivity {
 	}
 	
 	public void login_in(){
+		user_name=doctorLoginNameEditText.getText().toString().trim();
+		password=doctorLoginPasswordEditText.getText().toString().trim();
 		if (StringUtils.isBlank(user_name)){
 			showToast("请输入用户名");
 			return ;
