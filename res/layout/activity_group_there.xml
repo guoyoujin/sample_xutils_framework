@@ -2,15 +2,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".GroupThereActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello_worldGroupThereActivity" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical" >
+        <FrameLayout style="@style/BlueFlor.ActionBar" >
+
+        <TextView
+           
+            style="@style/BlueFlor.ActionBar.BtnText"
+            
+            android:text="" />
+
+        <TextView
+            style="@style/BlueFlor.ActionBar.Title"
+            android:text="科研管理" />
+
+        <TextView
+            android:id="@+id/add_research"
+            style="@style/BlueFlor.ActionBar.BtnText"
+            android:layout_gravity="right"
+            android:text="加科研" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/researchs_ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/unite_title_one_height"
+        android:visibility="gone" >
+		<include layout="@layout/lines"/>
+        <com.lidroid.xutils.custom.view.XListView
+            android:id="@+id/researchs_lv_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/unit_lines_color"
+            android:dividerHeight="@dimen/unit_lines_height" >
+        </com.lidroid.xutils.custom.view.XListView>
+        <include layout="@layout/lines"/>
+    </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

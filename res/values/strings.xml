@@ -27,5 +27,6 @@
     <string name="title_activity_group_two">GroupTwoActivity</string>
     <string name="title_activity_group_there">GroupThereActivity</string>
     <string name="title_activity_doctor_info">DoctorInfoActivity</string>
+    <string name="title_activity_doctor_login">DoctorLoginActivity</string>
 
 </resources>

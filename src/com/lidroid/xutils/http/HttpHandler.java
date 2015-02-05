@@ -16,6 +16,8 @@
 package com.lidroid.xutils.http;
 
 import android.os.SystemClock;
+import android.util.Log;
+
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.callback.*;
@@ -165,6 +167,7 @@ public class HttpHandler<T> extends PriorityAsyncTask<Object, Object, Void> impl
             // init request & requestUrl
             request = (HttpRequestBase) params[0];
             requestUrl = request.getURI().toString();
+            Log.e("TAG", "requestUrl======"+requestUrl);
             if (callback != null) {
                 callback.setRequestUrl(requestUrl);
             }

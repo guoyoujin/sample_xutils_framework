@@ -3,13 +3,11 @@ package com.lidroid.xutils.sample;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import android.annotation.SuppressLint;
 import android.view.View;
 import android.view.ViewGroup;
 
 public class ActivityGroupManager {
-
-	private static final String TAG = "frag_manager";
-
 	public static final int RECORD_ACTIVITY_VIEW = 0;
 	public static final int CATEGORY_ACTIVITY_VIEW = 1;
 	public static final int MORE_AVTIVITY_VIEW = 2;
@@ -17,6 +15,7 @@ public class ActivityGroupManager {
 	private HashMap<Integer, View> hashMap;
 	private ViewGroup container;
 
+	@SuppressLint("UseSparseArrays")
 	public ActivityGroupManager() {
 		hashMap = new HashMap<Integer, View>();
 	}

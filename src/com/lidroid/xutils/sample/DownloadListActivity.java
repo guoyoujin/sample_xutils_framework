@@ -96,8 +96,8 @@ public class DownloadListActivity extends Activity {
             return i;
         }
 
-        @SuppressWarnings("unchecked")
-        @Override
+        @SuppressWarnings("rawtypes")
+		@Override
         public View getView(int i, View view, ViewGroup viewGroup) {
             DownloadItemViewHolder holder = null;
             DownloadInfo downloadInfo = downloadManager.getDownloadInfo(i);

@@ -187,8 +187,7 @@
         <item name="android:gravity">center</item>
         <item name="android:paddingLeft">@dimen/action_bar_btn_padding_outside</item>
         <item name="android:paddingRight">@dimen/action_bar_btn_padding_outside</item>
-        <!-- <item name="android:text">@string/menu</item> -->
-        <!-- <item name="android:textColor">@drawable/action_bar_btn_text_color</item> -->
+        <item name="android:textColor">@drawable/action_bar_btn_text_color</item>
         <item name="android:textSize">@dimen/action_bar_btn_text_size</item>
         <item name="android:clickable">true</item>
     </style>

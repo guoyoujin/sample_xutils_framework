@@ -37,7 +37,8 @@ public class Column {
     protected final Method setMethod;
 
     protected final Field columnField;
-    protected final ColumnConverter columnConverter;
+    @SuppressWarnings("rawtypes")
+	protected final ColumnConverter columnConverter;
 
     /* package */ Column(Class<?> entityType, Field field) {
         this.columnField = field;
@@ -52,7 +53,6 @@ public class Column {
         this.setMethod = ColumnUtils.getColumnSetMethod(entityType, field);
     }
 
-    @SuppressWarnings("unchecked")
     public void setValue2Entity(Object entity, Cursor cursor, int index) {
         this.index = index;
         Object value = columnConverter.getFieldValue(cursor, index);
@@ -130,7 +130,8 @@ public class Column {
         return columnField;
     }
 
-    public ColumnConverter getColumnConverter() {
+    @SuppressWarnings("rawtypes")
+	public ColumnConverter getColumnConverter() {
         return columnConverter;
     }
 

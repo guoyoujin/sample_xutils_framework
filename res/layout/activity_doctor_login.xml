@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorLoginActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical" >
+        
+	        <!-- ActionBar -->
+	    <FrameLayout
+	    	android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/actionbar_bgcolor">
+	
+			<!-- 标题 -->
+	        <TextView
+	            style="@style/BlueFlor.ActionBar.Title"
+	            android:text="登录" />
+	        
+	        <!-- 已废弃 -->
+	   	    <TextView
+	            android:id="@+id/text_doctor_login_back"
+	            style="@style/BlueFlor.ActionBar.BtnLeft"
+	            android:layout_gravity="left"
+	            android:text="返回" />
+	
+	    </FrameLayout><!-- End With ActionBar -->
+    
+    	<com.lidroid.xutils.custom.view.ElasticScrollView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/blank_background">
+		    
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="280dp"
+		    android:orientation="vertical" >
+		     
+			 <LinearLayout
+			    android:layout_marginTop="20.0dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical">
+		        <View
+			        android:layout_width="fill_parent"
+			        android:layout_height="@dimen/unit_lines_height"
+				    android:orientation="vertical"
+				    android:background="@color/unit_lines_color"
+ 					/>
+		    	<LinearLayout 
+			    	    android:layout_width="match_parent"
+			    	    android:layout_height="wrap_content"
+			    	    android:gravity="center_vertical"
+			    	    android:background="#ffffff"
+			    	    android:orientation="horizontal"
+		    	    >
+		    	    <LinearLayout 
+			    	    android:layout_width="40dp"
+			    	    android:layout_height="match_parent"
+			    	    android:background="#ffffff"
+			    	    android:gravity="center_vertical|center_horizontal"
+			    	    android:orientation="horizontal"
+		    	    >
+		    	    <ImageView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/register_phone"/>
+		    	    </LinearLayout>
+		    	    <LinearLayout 
+			    	    android:layout_width="wrap_content"
+			    	    android:layout_height="wrap_content"
+			    	    android:gravity="center_vertical"
+			    	    android:background="#ffffff"
+			    	    android:orientation="vertical"
+		    	    >
+		    	    
+		    	    <com.lidroid.xutils.custom.view.EditTextWithDel
+			   	        android:layout_marginLeft="0dp"
+			    	    android:id="@+id/doctorLoginNameEditText"
+			    	    android:layout_marginRight="0dp"
+			    	    android:layout_width="match_parent"
+			            android:layout_height="@dimen/unite_pro_height"
+			            android:background="@color/white"
+			            android:textColor="@color/black"
+			            android:textSize="@dimen/unite_tv_size"
+			            android:singleLine="true"
+			    	    android:hint="请输入手机号"
+			    	    android:selectAllOnFocus="true"
+			    	    android:textCursorDrawable="@null"
+			    	    android:paddingLeft="0dp">
+		    	    <requestFocus />
+           		 </com.lidroid.xutils.custom.view.EditTextWithDel> 
+           		  <View
+			        android:layout_width="fill_parent"
+			        android:layout_height="@dimen/unit_lines_height"
+					android:orientation="vertical"
+					android:background="@color/unit_lines_color"/>
+           		  </LinearLayout> 
+		    	</LinearLayout> 
+		     </LinearLayout>
+		     
+			
+		     <LinearLayout
+		        android:layout_marginTop="0dp"
+		       	android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#ffffff"
+		   	    android:orientation="horizontal" >
+		   	    <RelativeLayout 
+		   	        android:layout_width="match_parent"
+		   	        android:layout_height="match_parent">
+		    	    <LinearLayout android:layout_width="match_parent"
+		    	        android:layout_height="wrap_content"
+		    	        android:orientation="horizontal">
+           		  	<LinearLayout 
+           		  	    android:layout_width="40dp"
+           		  	    android:gravity="center_vertical|center_horizontal"
+           		  	    android:layout_height="match_parent"
+           		  	    android:orientation="vertical"
+           		  	    >
+           		  	    <ImageView 
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:src="@drawable/register_password"/>
+           		  	     <View
+			        android:layout_width="match_parent"
+			        android:layout_height="0.1dp"
+			        android:background="#c8c7cc" />      
+           		  	</LinearLayout>
+
+           		  	<LinearLayout
+           		  	    android:layout_width="match_parent"
+           		  	    android:layout_height="wrap_content"
+           		  	    android:orientation="vertical" >
+           		  	
+			   	    <TextView
+			    	    android:layout_marginLeft="18.0dp"
+			            android:layout_width="45dp"
+			            android:layout_height="45dp"
+			            android:visibility="gone"
+			            android:text="密码"
+			            />
+			   	    <com.lidroid.xutils.custom.view.EditTextWithDel
+			   	        android:layout_marginLeft="0dp"
+			    	    android:id="@+id/doctorLoginPasswordEditText"
+			    	    android:layout_marginRight="0dp"
+			    	    android:layout_width="match_parent"
+			            android:layout_height="@dimen/unite_pro_height"
+			            android:background="@color/white"
+			            android:textColor="@color/black"
+			            android:textSize="@dimen/unite_tv_size"
+			            android:singleLine="true"
+			            android:inputType="textPassword"
+			    	    android:hint="请输入密码"
+			    	    android:selectAllOnFocus="true"
+			    	    android:textCursorDrawable="@null"
+			    	    android:paddingLeft="0dp">
+           			 </com.lidroid.xutils.custom.view.EditTextWithDel>
+           			  <View
+				        android:layout_width="match_parent"
+				        android:layout_height="@dimen/unit_lines_height"
+	    				android:orientation="vertical"
+	    				android:background="@color/unit_lines_color"/>      
+          			 </LinearLayout>
+          			 <View
+			        android:layout_width="match_parent"
+			        android:layout_height="0.1dp"
+			        android:background="#c8c7cc" />      			 
+					</LinearLayout>				
+		    	    </RelativeLayout>
+		    	     	    
+		     </LinearLayout>
+		    
+			 <RelativeLayout
+			    android:layout_marginTop="10.0dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		    	
+		   	    <CheckBox
+			   	    android:id="@+id/doctorLoginLoginCheckBox"
+			   	    android:layout_marginLeft="18.0dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="20dp"
+			        android:button="@drawable/doctor_login_checked_selector"   
+			        android:text="  下次自动登录" 
+			        android:checked="true"
+			        android:textSize="@dimen/unite_tv_size"
+			    	android:textColor="#197ecf"
+			    	android:visibility="invisible"/>
+
+		   	    <CheckBox
+		   	        android:id="@+id/doctorLoginLoginflag"
+		   	        android:layout_width="wrap_content"
+		   	        android:layout_height="wrap_content"
+		   	        android:layout_alignParentRight="true"
+		   	        android:layout_alignParentTop="true"
+		   	        android:layout_marginRight="16dp"
+		   	        android:button="@drawable/doctor_login_checked_selector"   
+			        android:text="  记住账号" 
+			        android:checked="true"
+			        android:textSize="@dimen/unite_tv_size"
+			    	android:textColor="#197ecf"
+			    	android:visibility="invisible" />
+
+		   	    <TextView
+		   	        android:id="@+id/doctorLoginForgetPasswordTextView"
+		   	        android:layout_width="100dp"
+		   	        android:layout_height="@dimen/unite_pro_height"
+		            android:textSize="@dimen/unite_tv_size"
+		   	        android:gravity="right|center_vertical"
+		   	        android:layout_alignParentBottom="true"
+		   	        android:layout_alignRight="@+id/doctorLoginLoginflag"
+		   	        android:text="忘记密码？"
+		   	        android:textColor="#197ecf" />
+		    	
+		     </RelativeLayout>
+		   <RelativeLayout 
+		       android:layout_width="match_parent"
+		       android:background="#ffffff"
+		       android:layout_marginTop="50dp"
+		       android:layout_height="wrap_content">
+		   	    <View
+			        android:layout_width="fill_parent"
+			        android:layout_height="@dimen/unit_lines_height"
+				    android:orientation="vertical"
+				    android:background="@color/unit_lines_color" />
+			 <Button
+		        android:id="@+id/doctorLoginLoginButton"
+		        android:textColor="@color/actionbar_bgcolor"
+                android:textSize="@dimen/unite_tv_size"
+		        android:layout_marginLeft="0dp"
+		        android:layout_marginRight="0dp"
+		        android:gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:background="@drawable/lines_click"
+		        android:text="登录"/>
+			 <View
+			        android:layout_width="fill_parent"
+			        android:layout_height="@dimen/unit_lines_height"
+				    android:orientation="vertical"
+				    android:background="@color/unit_lines_color" />
+			 <Button
+		        android:id="@+id/doctorLoginRegestButton"
+		        android:layout_marginTop="10.0dp"
+		        android:layout_marginLeft="18.0dp"
+		        android:layout_marginRight="18.0dp"
+		        android:gravity="center"
+		        android:layout_width="match_parent"
+		        android:layout_height="44dp"
+		        android:visibility="gone"
+		        android:background="@drawable/doctor_login_button_selector"
+		        android:text="注册"
+		        android:textSize="@dimen/doctorloginbuttonTextSize"
+		        android:textColor="#ffffff" />
+
+			 <View
+			     
+			     android:layout_width="fill_parent"
+			     android:layout_height="@dimen/unit_lines_height"
+				 android:orientation="vertical"
+				 android:background="@color/unit_lines_color"
+			     android:layout_alignParentBottom="true"
+			     android:layout_marginLeft="0dp"
+			     android:text="TextView" />
+			 
+			 </RelativeLayout> 
+		     	
+		</LinearLayout>
+		
+	</com.lidroid.xutils.custom.view.ElasticScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

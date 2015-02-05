@@ -1,10 +1,9 @@
 package com.lidroid.xutils.sample;
 
 import com.lidroid.xutils.BaseActivity;
-
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
 
 public class GroupFourActivity extends BaseActivity {
 
@@ -12,8 +11,42 @@ public class GroupFourActivity extends BaseActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentLayout(R.layout.activity_group_four);
+		hideTitleView();
+		initView();
 	}
-
+	
+	public void initView(){
+		findViewById(R.id.myselfmainphoto).setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+				
+				
+			}
+		});
+		findViewById(R.id.myselfmainsettings).setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+				
+				
+			}
+		});
+		findViewById(R.id.myselfmain_user_feedback).setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+				
+				
+			}
+		});
+		findViewById(R.id.myselfmaincontactservice).setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+				
+				
+			}
+		});
+		findViewById(R.id.myselfmainabouttx).setOnClickListener(new OnClickListener() {
+			public void onClick(View arg0) {
+				
+				
+			}
+		});
+	}
 	
 
 }

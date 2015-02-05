@@ -18,9 +18,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
-
-import com.google.gson.JsonObject;
 import com.lidroid.xutils.BaseActivity;
+import com.lidroid.xutils.bean.Doctor;
 import com.lidroid.xutils.config.AppContext;
 import com.lidroid.xutils.custom.view.FButton;
 import com.lidroid.xutils.exception.HttpException;
@@ -32,9 +31,8 @@ import com.lidroid.xutils.util.LogUtils;
 
 public class LoginGuideFrist extends BaseActivity implements OnClickListener{
 	private ViewPager viewPager_login_guide_frist;
-	@SuppressWarnings("unused")
 	private FButton btn_login,btn_register=null;
-	@SuppressWarnings("unused")
+
 	private ImageButton btn_tiyanmoshi_click=null;
 	@SuppressWarnings("unused")
 	private ImageView imageView_view_pager=null;

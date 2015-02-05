@@ -58,7 +58,8 @@ public class DarkButton extends Button {
     }  
     
     /**调用父类设置图片方法*/  
-    private void setSuperImageDrawable(Drawable drawable) {  
+    @SuppressWarnings("deprecation")
+	private void setSuperImageDrawable(Drawable drawable) {  
        // super.setBackground(drawable);  
         super.setBackgroundDrawable(drawable);
     }  

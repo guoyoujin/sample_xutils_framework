@@ -44,7 +44,9 @@ public class DownloadService extends Service {
         super.onCreate();
     }
 
-    @Override
+
+	@SuppressWarnings("deprecation")
+	@Override
     public void onStart(Intent intent, int startId) {
         super.onStart(intent, startId);
     }

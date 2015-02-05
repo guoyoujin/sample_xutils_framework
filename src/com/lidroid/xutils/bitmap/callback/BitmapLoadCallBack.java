@@ -81,7 +81,8 @@ public abstract class BitmapLoadCallBack<T extends View> {
         this.bitmapSetter = bitmapSetter;
     }
 
-    public void setBitmap(T container, Bitmap bitmap) {
+    @SuppressWarnings("deprecation")
+	public void setBitmap(T container, Bitmap bitmap) {
         if (bitmapSetter != null) {
             bitmapSetter.setBitmap(container, bitmap);
         } else if (container instanceof ImageView) {
@@ -91,7 +92,8 @@ public abstract class BitmapLoadCallBack<T extends View> {
         }
     }
 
-    public void setDrawable(T container, Drawable drawable) {
+    @SuppressWarnings("deprecation")
+	public void setDrawable(T container, Drawable drawable) {
         if (bitmapSetter != null) {
             bitmapSetter.setDrawable(container, drawable);
         } else if (container instanceof ImageView) {

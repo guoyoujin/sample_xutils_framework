@@ -19,6 +19,7 @@ public class FlowerView extends View {
 
 	Bitmap mFlowers = null;
 	MyFlower flowers [] = new MyFlower[25];
+	@SuppressWarnings("unused")
 	private Integer[] offsetX ;
 	private Integer[] offsetY ;
 	Random r = new Random();

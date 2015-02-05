@@ -15,6 +15,8 @@
 
 package com.lidroid.xutils.http;
 
+import android.util.Log;
+
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.callback.DefaultHttpRedirectHandler;
@@ -69,6 +71,7 @@ public class SyncHttpHandler {
                 requestUrl = request.getURI().toString();
                 requestMethod = request.getMethod();
                 if (HttpUtils.sHttpCache.isEnabled(requestMethod)) {
+                	Log.e("TAG", "requestUrl======"+requestUrl);
                     String result = HttpUtils.sHttpCache.get(requestUrl);
                     if (result != null) {
                         return new ResponseStream(result);

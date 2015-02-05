@@ -1,8 +1,5 @@
 package com.lidroid.xutils.config;
 
-import com.lidroid.xutils.BaseActivity;
-import com.lidroid.xutils.HttpUtils;
-
 import android.content.Context;
 
 public class AppContext {
