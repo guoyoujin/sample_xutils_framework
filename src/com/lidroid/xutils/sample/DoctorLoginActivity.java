@@ -113,6 +113,7 @@ public class DoctorLoginActivity extends BaseActivity {
 			return ;
 		}
 		if (StringUtils.isBlank(password)){
+			
 			showToast("请输入用户密码");
 			return ;
 		}
