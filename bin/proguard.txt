@@ -1,0 +1,53 @@
+# view res/layout/main.xml #generated:14
+-keep class android.support.v4.app.FragmentTabHost { <init>(...); }
+
+# view res/layout/activity_login_guide_frist.xml #generated:4
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/patient_listview_item.xml #generated:13
+# view res/layout/patient_tab_list.xml #generated:28
+-keep class com.lidroid.xutils.custom.textview.JustifyTextView { <init>(...); }
+
+# view res/layout/activity_login_guide_frist.xml #generated:58
+# view res/layout/activity_login_guide_frist.xml #generated:68
+-keep class com.lidroid.xutils.custom.view.FButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.lidroid.xutils.sample.CrashShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.lidroid.xutils.sample.DoctorInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.lidroid.xutils.sample.DownloadListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.lidroid.xutils.sample.GroupFourActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.lidroid.xutils.sample.GroupOneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.lidroid.xutils.sample.GroupThereActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.lidroid.xutils.sample.GroupTwoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.lidroid.xutils.sample.ImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.lidroid.xutils.sample.LoadingFristActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.lidroid.xutils.sample.LoginGuideFrist { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.lidroid.xutils.sample.MainGroupActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.lidroid.xutils.sample.download.DownloadService { <init>(...); }
+
+# onClick res/layout/activity_crash_show.xml #generated:11
+-keepclassmembers class * { *** onBtnExit(...); }
+

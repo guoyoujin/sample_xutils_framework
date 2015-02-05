@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFEEEEEE">
+    
+    <!-- ActionBar -->
+    <FrameLayout style="@style/BlueFlor.ActionBar">
+		
+		<TextView style="@style/BlueFlor.ActionBar.BtnLeft"
+		    android:id="@+id/action_bar_btn_left" />
+		
+        <TextView style="@style/BlueFlor.ActionBar.Title"
+            android:id="@+id/action_bar_title" />
+
+		<TextView style="@style/BlueFlor.ActionBar.BtnRight"
+		    android:id="@+id/action_bar_btn_right" />
+
+    </FrameLayout><!-- End With ActionBar -->
+   
+
+    <!-- ActionBar -->
+    <FrameLayout style="@style/BlueFlor.ActionBar">
+
+		<TextView style="@style/BlueFlor.ActionBar.BtnLeft" />
+
+        <TextView style="@style/BlueFlor.ActionBar.Title" />
+
+        <TextView style="@style/BlueFlor.ActionBar.BtnText"
+            android:layout_gravity="right" />
+
+    </FrameLayout><!-- End With ActionBar -->
+    
+   
+
+</LinearLayout>

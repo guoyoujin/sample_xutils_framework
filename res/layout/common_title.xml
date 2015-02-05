@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linout_title_bar"
+        android:layout_width="match_parent"
+        android:background="@color/actionbar_bgcolor"
+        android:gravity="center_vertical"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            style="@style/BlueFlor.ActionBar.BtnLeft"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            style="@style/BlueFlor.ActionBar.Title"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="match_parent"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+id/btn_right"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            style="@style/BlueFlor.ActionBar.BtnRight"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="match_parent"
+            android:text="确定" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

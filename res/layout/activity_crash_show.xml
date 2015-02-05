@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+    	android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/actionbar_bgcolor">
+
+        <TextView
+		    android:id="@+id/doctor_patient_medical_record_returnTextView"
+	    	android:layout_width="wrap_content"
+	   	    android:layout_height="match_parent"
+	   	    android:drawableLeft="@drawable/actionbar_btn_left_image"
+	   	    android:layout_gravity="left"
+	        android:gravity="center"
+	   	    android:paddingLeft="10dp"
+	   	    android:paddingRight="14dp"
+	   	    android:drawablePadding="6dp"
+	        android:text="重启应用"
+	        android:visibility="gone"
+	   	    android:textColor="@drawable/actionbar_btn_text_color"
+	   	    android:textSize="@dimen/activity_actor_left"
+	   	    android:clickable="true"
+	   	    android:onClick="onBtnExit" />
+        <TextView
+            android:id="@+id/crash_show_tv_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:visibility="gone"
+	        android:textSize="16sp"
+	        android:textColor="#FF000000" />
+		<!-- 标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#FFFFFFFF"
+            android:text="提示" />
+        
+        
+
+    </FrameLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginBottom="0dp"
+		    android:src="@drawable/crach_start" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginBottom="0dp"
+		    android:layout_marginLeft="0dp" >
+		    
+		    <Button
+		    
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		   	android:layout_weight="1"
+		   	android:background="#ffffffff"
+		    />
+		     <Button
+		    android:id="@+id/btn_crach_start"
+		    android:layout_width="0dp"
+		    android:layout_weight="4"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:text="继续"
+		    android:layout_marginBottom="70dp"
+		    android:textColor="#ffffff"
+		    android:textSize="20sp"
+		    android:background="@drawable/carch_btn_click"
+		    />
+		     <Button
+		   
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:background="#ffffffff"
+		    />
+		</LinearLayout>
+	    
+	</RelativeLayout>
+   
+</LinearLayout>

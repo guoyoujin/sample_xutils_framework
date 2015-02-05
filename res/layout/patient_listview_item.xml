@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="horizontal" >
+<ImageView
+    android:id="@+id/patient_list_view_img"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/action_bar_icon_add_user" />
+
+<com.lidroid.xutils.custom.textview.JustifyTextView
+    android:id="@+id/patient_list_view_tv" 
+    android:layout_width="match_parent" 
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:text="jjjjjjjjjjj"
+    />
+
+</LinearLayout>

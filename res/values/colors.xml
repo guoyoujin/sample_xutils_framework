@@ -1,0 +1,167 @@
+<resources>
+    <color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+    <color name="fbutton_color_peter_river">#3498db</color>
+    <color name="fbutton_color_belize_hole">#2980b9</color>
+    <color name="fbutton_color_amethyst">#9b59b6</color>
+    <color name="fbutton_color_wisteria">#8e44ad</color>
+    <color name="fbutton_color_wet_asphalt">#34495e</color>
+    <color name="fbutton_color_midnight_blue">#2c3e50</color>
+    <color name="fbutton_color_sun_flower">#f1c40f</color>
+    <color name="fbutton_color_orange">#f39c12</color>
+    <color name="fbutton_color_carrot">#e67e22</color>
+    <color name="fbutton_color_pumpkin">#d35400</color>
+    <color name="fbutton_color_alizarin">#e74c3c</color>
+    <color name="fbutton_color_pomegranate">#c0392b</color>
+    <color name="fbutton_color_clouds">#ecf0f1</color>
+    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+    <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="fbutton_color_transparent">@android:color/transparent</color>
+    <color name="login_register">#f2f2f2</color>
+	<color name="bgColor">#f6f6f6</color>
+    <color name="Gray">#e6e6e6</color>
+    <color name="black_light">#33000000</color>
+    <color name="black_drak">#AA000000</color>
+    <color name="Gray_stroke">#d4d4d4</color>
+    <color name="white_ligght">#f8f8f8</color>
+    <color name="white_grey">#9e0000</color>
+    <color name="typeBlack">#1e1e1e</color>
+    <color name="listItem">#886dbfd4</color>
+    <color name="listGray">#828282</color>
+ 	<color name="c_ffbd3e">#e6e6e6</color>   
+ 	<color name="c_progressbarBg">#f6f6f6</color>   
+ 	<color name="dialogColor">#f0ffffff</color>   
+ 	<color name="dialogTxtColor">#0048fc</color>  
+ 	
+ 	<color name="newsInfoList">#d7000f</color>
+    <!-- listviewpys com.zsl -->
+    <color name="base_bg">#f4f6f6</color>
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="guide_color">#898989</color>
+
+    <!-- ActionBar -->
+    <color name="actionbar_btn_text_normal">#FFFFFFFF</color>
+    <color name="actionbar_btn_text_click">#FF0A3E68</color>
+    <color name="button_text_click">#FF0A3E68</color>
+    <color name="actionbar_btn_normal">#FFFFFFFF</color>
+    <color name="actionbar_btn_click">#FF0A3E68</color>
+    <color name="actionbar_bgcolor">#FF3b699a</color>
+    <color name="text_theme">#FF16ACAE</color>
+    <color name="text_theme_dark">#FF037678</color>
+    <color name="text_normal">#FF3D3D3D</color>
+    <color name="text_secondary">#FF666666</color>
+    <color name="text_clickable">#FF037678</color>
+    <color name="message_patient_size_color">#88888d</color>
+	<color name="login_delung">#2371b5</color>
+	<color name="login_show">#125691</color>
+    <!-- DateSelectorBar -->
+    <color name="date_selector_bar_background">#FFECECEC</color>
+    <color name="title_bar_bottom">#1a7fcf</color>
+    <color name="title_two_color">#F8F8F8</color>
+    <color name="listtext1">#80b4d9</color>
+    <color name="listtext2">#3d3d3d</color>
+    <color name="radiobg_press">#43859d</color>
+    <color name="radiobg_normal">#555555</color>
+    <color name="blue_search">#9ad3ff</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blank_background">#f0f0f0</color>
+    <color name="d_color">#3d3d3d</color>
+    <color name="myself_item_normal">#ffffff</color>
+    <color name="myself_item_select">#ffffff</color>
+    <color name="mypatients_item_normal">#ffffff</color>
+    <color name="lines">#ececec</color>
+    <color name="lines_bg">#efeff4</color>
+    <color name="clicklines">#f0f0f0</color>
+    <color name="ku">#eeeeee</color>
+    <color name="xuan">#f9f9f9</color>
+    <color name="white">#ffffff</color>
+    <color name="touming">#00000000</color>
+    <color name="black">#3d3d3d</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="msgcount">#ff7474</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    <color name="head_text">#0e5986</color>
+    <color name="author_text">#0e5986</color>
+    <color name="weight_bar_buttondown">#63A3D7</color>
+    <color name="weight_bar_buttonup">#A4A9AE</color>
+    <color name="face_bg">#eef1f4</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="listitem_transparent">#00000000</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="listitem_white">#ffffffff</color>
+    <color name="listitem_blue">#0e5986</color>
+    <color name="listitem_gray">#ff9da19e</color>
+    <color name="listitem_green">#ffe3ffc6</color>
+    <color name="listitem_greenyellow">#ff87b869</color>
+    <color name="listitem_yellow">#fffaffbf</color>
+    <color name="listitem_background1">#fafafafa</color>
+    <!-- 颜色设置 -->
+    <color name="select_item_tv">#3d3d3d</color>
+    <color name="tabcolor">#197ecf</color>
+    <color name="dianji">#024EA2</color>
+    <!-- 浅黄色主页背景 -->
+    <color name="calendar_bg">#ffeab2</color>
+    <!-- 黑色字体 -->
+    <color name="typeface_color_black">#232e35</color>
+    <!-- 深黄背景 -->
+    <color name="deep_yellow">#ef8112</color>
+    <!-- 浅黄色背景 -->
+    <color name="light_yellow">#ffb70d</color>
+    <!-- 蓝色背景 -->
+    <color name="bule_bg">#039ef6</color>
+    <!-- 浅灰背景 -->
+    <color name="light_gray_bg">#cccccc</color>
+    <!-- 浅灰字体 -->
+    <color name="typeface_color_gray">#e4e4e4</color>
+    <color name="deeplines">#808080</color>
+    <!-- 背景色 -->
+    <color name="bgcolor">#f8f8f8</color>
+    <!-- 系统时间控件的字体颜色 -->
+    <color name="follow_picker_color">#6bc8ea</color>
+    <!-- 系统时间控件的背景颜色 -->
+    <color name="follow_picker_bg_color">#F5F5F5</color>
+    <!-- action bar -->
+    <color name="action_bar_btn_text_normal">#FFFFFFFF</color>
+    <color name="action_bar_btn_text_pressed">#FF0A3E68</color>
+    <color name="container_background">#FFEFEFEF</color>
+    <color name="button_text_normal">#FFFFFFFF</color>
+    <color name="button_text_pressed">#FF0A3E68</color>
+    <color name="check_box_text_normal">#FF000000</color>
+    <color name="check_box_text_checked">#FF0A3E68</color>
+	<!-- 深灰色 -->    
+    <color name="deep_grey">#7a7a7a</color>
+    <!-- experience mode -->
+    <color name="experience_mode_background">#ff8900</color>
+    <color name="experience_mode_font">#ffffff</color>
+	<color name="crach_btn_click_color">#ae87f2</color>
+	<color name="crach_btn_click_colors">#875f3a</color>
+	<color name="pop_item_click_colors">#244c75</color>
+</resources>

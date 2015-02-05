@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dialog样式 -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--  边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+     	<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+     <style name="dialogAnim" parent="android:Animation" >
+        <item name="android:windowEnterAnimation">@anim/dialog_show</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_dismiss</item>
+    </style>
+    <style name="divider_horizontal"><!-- 水平分割线 -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.01dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="divider_vertical"><!-- 垂直分割线 -->
+        <item name="android:layout_width">0.01dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+	  <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+	      <item name="android:windowFrame">@null</item> <!--Dialog的windowFrame框为无 --> 
+	      <item name="android:windowIsFloating">false</item><!-- 是否漂现在activity上 -->
+	      <item name="android:windowIsTranslucent">true</item><!-- 是否半透明 -->
+	      <item name="android:windowNoTitle">true</item>
+	      <item name="android:backgroundDimEnabled">false</item>
+<!-- 	      <item name="android:windowBackground">@drawable/loading_bg</item> -->
+	      <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+
+        <!-- 这是item的背景修改，不按时透明，按时显示绿色 -->
+        <item name="android:background">@color/actionbar_bgcolor</item>
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+
+    <style name="ActivityTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item>
+    </style>
+    
+    <style name="WheelViewDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowBackground">@color/blank_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="item_WheelView">
+   		<item name="android:layout_height">match_parent</item>
+   		<item name="android:layout_width">0px</item>
+       	<item name="android:layout_weight">1</item>      	
+    </style>
+    
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:indeterminateDrawable">@anim/loading</item>
+		<item name="android:layout_width">21dip</item> 
+		<item name="android:layout_height">21dip</item>
+		<item name="android:layout_gravity">center_vertical</item>
+	</style>
+	<style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+   		<item name="android:layout_height">fill_parent</item>
+       	<item name="android:layout_weight">1</item>      	
+       	<item name="android:listSelector">@drawable/listview_item_selector_bg</item>
+       	<item name="android:divider">@drawable/listview_divider_line</item>
+       	<item name="android:dividerHeight">1.0dip</item>
+       	<item name="android:fadingEdge">none</item>
+       	<item name="android:scrollingCache">false</item>
+    </style>
+    <style name="tweet_largeCustomProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/tweet_custom_loading</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+       <!-- <item name="android:windowBackground">@color/alpha_bg</item>背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+    <style name="radioButton">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/radiobtn_selector</item>
+    <item name="android:button">@null</item>
+    </style>
+    
+    
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AnimationPreview">  
+       <item name="android:windowEnterAnimation">@anim/fade_in</item>  
+       <item name="android:windowExitAnimation">@anim/fade_out</item>  
+   </style> 
+
+    
+    <!-- Blue Flor Theme -->
+    <style name="BlueFlor" parent="AppBaseTheme">
+    </style>
+    
+    <style name="BlueFlor.ActionBar" parent="BlueFlor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+        <item name="android:background">@color/actionbar_bgcolor</item>
+    </style>
+    
+    <style name="BlueFlor.ActionBar.Title" parent="BlueFlor">
+        <item name="android:id">@+id/action_bar_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+		<item name="android:text"></item>
+        <item name="android:textSize">@dimen/action_bar_title_text_size</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="BlueFlor.ActionBar.BtnLeft" parent="BlueFlor">
+        <item name="android:id">@+id/action_bar_btn_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawableLeft">@drawable/action_bar_btn_left_image</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/action_bar_btn_padding_outside</item>
+        <item name="android:paddingRight">@dimen/action_bar_btn_padding_inside</item>
+        <item name="android:drawablePadding">@dimen/action_bar_btn_drawable_padding</item>
+        <item name="android:textColor">@drawable/action_bar_btn_text_color</item>
+        <item name="android:textSize">@dimen/action_bar_btn_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+	<style name="BlueFlor.ActionBar.BtnRight" parent="BlueFlor">
+		<item name="android:id">@+id/action_bar_btn_right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawableRight">@drawable/action_bar_btn_right_image</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/action_bar_btn_padding_inside</item>
+        <item name="android:paddingRight">@dimen/action_bar_btn_padding_outside</item>
+        <item name="android:drawablePadding">@dimen/action_bar_btn_drawable_padding</item>
+        <item name="android:textColor">@drawable/action_bar_btn_text_color</item>
+        <item name="android:textSize">@dimen/action_bar_btn_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="BlueFlor.ActionBar.BtnText" parent="BlueFlor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/action_bar_btn_padding_outside</item>
+        <item name="android:paddingRight">@dimen/action_bar_btn_padding_outside</item>
+        <!-- <item name="android:text">@string/menu</item> -->
+        <!-- <item name="android:textColor">@drawable/action_bar_btn_text_color</item> -->
+        <item name="android:textSize">@dimen/action_bar_btn_text_size</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="BlueFlor.ActionBar.Icon" parent="BlueFlor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/action_bar_icon_padding</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="BlueFlor.ActionBar.ContainerLeft" parent="BlueFlor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="BlueFlor.ActionBar.ContainerRight" parent="BlueFlor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+	   <!-- <item name="android:button">@drawable/checkbox_selector_list_item</item> -->
+	   <item name="android:paddingLeft">25.0dip</item>
+	   <item name="android:maxHeight">8dp</item>
+	   </style>
+	    <style name="IMTheme.Basic" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="IMTheme.Transparent" parent="@style/IMTheme.Basic">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>
