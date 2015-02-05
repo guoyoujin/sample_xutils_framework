@@ -135,6 +135,8 @@ public class LoginGuideFrist extends BaseActivity implements OnClickListener{
 	public void onClick(View arg0) {
 		switch(arg0.getId()){
 		case R.id.btn_login:
+			Intent intent=new Intent(LoginGuideFrist.this,DoctorLoginActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.btn_register:
 			break;			

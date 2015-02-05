@@ -8,7 +8,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -51,16 +55,36 @@ public class DoctorLoginActivity extends BaseActivity {
 		init_shp();
 		init_user();
 		if(logingFlg){
-			
-		}else{
-			
+			login_in();
 		}
 	}
+	private Handler handler=new Handler(){
+		public void handleMessage(android.os.Message msg) {
+			switch (msg.what) {
+			case 0:
+				Intent intent=new Intent(DoctorLoginActivity.this,MainGroupActivity.class);
+				startActivity(intent);
+				break;
+			case 1:
+				
+				break;
+			default:
+				break;
+			}
+		};
+	};
 	public void initView(){
 		doctorLoginNameEditText=(EditTextWithDel) findViewById(R.id.doctorLoginNameEditText);
 		doctorLoginPasswordEditText=(EditTextWithDel) findViewById(R.id.doctorLoginPasswordEditText);
 		doctorLoginForgetPasswordTextView=(TextView) findViewById(R.id.doctorLoginForgetPasswordTextView);
 		doctorLoginLoginButton=(Button) findViewById(R.id.doctorLoginLoginButton);
+		doctorLoginLoginButton.setOnClickListener(new OnClickListener() {		
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				login_in();
+			}
+		});
 		text_doctor_login_back=(TextView) findViewById(R.id.text_doctor_login_back);
 	}
 	public void init_shp(){
@@ -71,6 +95,8 @@ public class DoctorLoginActivity extends BaseActivity {
 		doctorLoginNameEditText.setText(sp_login.getString("user_name", ""));
 		doctorLoginPasswordEditText.setText(sp_login.getString("password", ""));
 		logingFlg=sp_login.getBoolean("flg", false);
+		user_name=doctorLoginNameEditText.getText().toString().trim();
+		password=doctorLoginPasswordEditText.getText().toString().trim();
 	}
 	public void http_get_doctor_Login(String username, String password){
 		RequestParams params=new RequestParams();
@@ -92,7 +118,15 @@ public class DoctorLoginActivity extends BaseActivity {
 						AppContext.REMEMBER_TOKEN=jsonObject2.optString("remember_token");
 						Log.e("TAG", AppContext.REMEMBER_TOKEN);
 						Doctor doctor = JsonUtil.fromJson(jsonObject2.getString("doctor"), Doctor.class);
+						edt.putString("user_name", jsonObject.optString("name"));
+						edt.putString("password", doctorLoginPasswordEditText.getText().toString().trim());
+						edt.putBoolean("flg",true);
 						Log.e("TAG", doctor.toString());
+						Message msg=new Message();
+						msg.what=0;
+						handler.sendMessage(msg);
+					}else{
+						showToast(jsonObject.optString("data"));
 					}
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block

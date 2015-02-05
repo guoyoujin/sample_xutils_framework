@@ -8,6 +8,11 @@
 # view res/layout/patient_tab_list.xml #generated:28
 -keep class com.lidroid.xutils.custom.textview.JustifyTextView { <init>(...); }
 
+# view res/layout/activity_doctor_login.xml #generated:150
+# view res/layout/activity_doctor_login.xml #generated:84
+-keep class com.lidroid.xutils.custom.view.EditTextWithDel { <init>(...); }
+
+# view res/layout/activity_doctor_login.xml #generated:36
 # view res/layout/activity_group_four.xml #generated:30
 -keep class com.lidroid.xutils.custom.view.ElasticScrollView { <init>(...); }
 
