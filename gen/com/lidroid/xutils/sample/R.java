@@ -17,9 +17,14 @@ public final class R {
         public static final int loading_dialog_progressbar=0x7f040005;
         public static final int loadmore_animation=0x7f040006;
         public static final int slide_from_right_slow=0x7f040007;
-        public static final int slide_to_left=0x7f040008;
-        public static final int slide_to_left_slow=0x7f040009;
-        public static final int slide_to_right=0x7f04000a;
+        public static final int slide_in_from_bottom=0x7f040008;
+        public static final int slide_in_from_top=0x7f040009;
+        public static final int slide_out_to_bottom=0x7f04000a;
+        public static final int slide_out_to_top=0x7f04000b;
+        public static final int slide_to_left=0x7f04000c;
+        public static final int slide_to_left_slow=0x7f04000d;
+        public static final int slide_to_right=0x7f04000e;
+        public static final int update_loading_progressbar_anim=0x7f04000f;
     }
     public static final class attr {
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -30,7 +35,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int backgroundColor=0x7f010012;
+        public static final int backgroundColor=0x7f010025;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -39,7 +44,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int barColor=0x7f010008;
+        public static final int barColor=0x7f01001b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -49,7 +54,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int barLength=0x7f010010;
+        public static final int barLength=0x7f010023;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -59,7 +64,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int barWidth=0x7f01000f;
+        public static final int barWidth=0x7f010022;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -68,7 +73,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int buttonColor=0x7f010001;
+        public static final int buttonColor=0x7f010014;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -77,7 +82,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circleColor=0x7f01000d;
+        public static final int circleColor=0x7f010020;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -87,7 +92,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cornerRadius=0x7f010004;
+        public static final int cornerRadius=0x7f010017;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -95,7 +100,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int delayMillis=0x7f01000c;
+        public static final int delayMillis=0x7f01001f;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -104,7 +109,141 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int foregroundColor=0x7f010011;
+        public static final int foregroundColor=0x7f010024;
+        /**  BELOW HERE ARE DEPRECEATED. DO NOT USE. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrAdapterViewBackground=0x7f010010;
+        /**  Style of Animation should be used displayed when pulling. 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rotate</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
+</table>
+         */
+        public static final int ptrAnimationStyle=0x7f01000c;
+        /**  Drawable to use as Loading Indicator. Changes both Header and Footer. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawable=0x7f010006;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableBottom=0x7f010012;
+        /**  Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableEnd=0x7f010008;
+        /**  Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableStart=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrDrawableTop=0x7f010011;
+        /**  A drawable to use as the background of the Header and Footer Loading Views 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderBackground=0x7f010001;
+        /**  Text Color of the Header and Footer Loading Views Sub Header 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderSubTextColor=0x7f010003;
+        /**  Base text color, typeface, size, and style for Header and Footer Loading Views 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderTextAppearance=0x7f01000a;
+        /**  Text Color of the Header and Footer Loading Views 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderTextColor=0x7f010002;
+        /** 
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrListViewExtrasEnabled=0x7f01000e;
+        /**  Mode of Pull-to-Refresh that should be used 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>disabled</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>pullFromStart</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>pullFromEnd</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>both</code></td><td>0x3</td><td></td></tr>
+<tr><td><code>manualOnly</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>pullDownFromTop</code></td><td>0x1</td><td> These last two are depreacted </td></tr>
+<tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
+</table>
+         */
+        public static final int ptrMode=0x7f010004;
+        /**  Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrOverScroll=0x7f010009;
+        /**  A drawable to use as the background of the Refreshable View 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrRefreshableViewBackground=0x7f010000;
+        /** 
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrRotateDrawableWhilePulling=0x7f01000f;
+        /**  Whether the user can scroll while the View is Refreshing 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrScrollingWhileRefreshingEnabled=0x7f01000d;
+        /**  Whether the Indicator overlay(s) should be used 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+         */
+        public static final int ptrShowIndicator=0x7f010005;
+        /**  Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrSubHeaderTextAppearance=0x7f01000b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -114,7 +253,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int radius=0x7f01000e;
+        public static final int radius=0x7f010021;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -123,7 +262,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int rimColor=0x7f010009;
+        public static final int rimColor=0x7f01001c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -133,7 +272,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int rimWidth=0x7f01000a;
+        public static final int rimWidth=0x7f01001d;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -142,7 +281,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int shadowColor=0x7f010002;
+        public static final int shadowColor=0x7f010015;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -150,7 +289,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int shadowEnabled=0x7f010000;
+        public static final int shadowEnabled=0x7f010013;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -160,7 +299,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int shadowHeight=0x7f010003;
+        public static final int shadowHeight=0x7f010016;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -170,7 +309,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spinSpeed=0x7f01000b;
+        public static final int spinSpeed=0x7f01001e;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -178,7 +317,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int text=0x7f010005;
+        public static final int text=0x7f010018;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -187,7 +326,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColor=0x7f010006;
+        public static final int textColor=0x7f010019;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -197,305 +336,310 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textSize=0x7f010007;
+        public static final int textSize=0x7f01001a;
     }
     public static final class color {
-        public static final int Gray=0x7f050019;
-        public static final int Gray_stroke=0x7f05001c;
+        public static final int Gray=0x7f080019;
+        public static final int Gray_stroke=0x7f08001c;
         /**  action bar 
          */
-        public static final int action_bar_btn_text_normal=0x7f050085;
-        public static final int action_bar_btn_text_pressed=0x7f050086;
-        public static final int actionbar_bgcolor=0x7f050031;
-        public static final int actionbar_btn_click=0x7f050030;
-        public static final int actionbar_btn_normal=0x7f05002f;
-        public static final int actionbar_btn_text_click=0x7f05002d;
+        public static final int action_bar_btn_text_normal=0x7f080085;
+        public static final int action_bar_btn_text_pressed=0x7f080086;
+        public static final int actionbar_bgcolor=0x7f080031;
+        public static final int actionbar_btn_click=0x7f080030;
+        public static final int actionbar_btn_normal=0x7f08002f;
+        public static final int actionbar_btn_text_click=0x7f08002d;
         /**  ActionBar 
          */
-        public static final int actionbar_btn_text_normal=0x7f05002c;
-        public static final int author_text=0x7f050068;
-        public static final int base_actionbar_bg=0x7f050028;
+        public static final int actionbar_btn_text_normal=0x7f08002c;
+        public static final int author_text=0x7f080068;
+        public static final int base_actionbar_bg=0x7f080028;
         /**  listviewpys com.zsl 
          */
-        public static final int base_bg=0x7f050027;
-        public static final int bgColor=0x7f050018;
+        public static final int base_bg=0x7f080027;
+        public static final int bgColor=0x7f080018;
         /**  背景色 
          */
-        public static final int bgcolor=0x7f050082;
-        public static final int black=0x7f05004f;
-        public static final int black_drak=0x7f05001b;
-        public static final int black_light=0x7f05001a;
-        public static final int black_overlay=0x7f050042;
-        public static final int blank_background=0x7f050043;
-        public static final int blue=0x7f050055;
-        public static final int blue_search=0x7f050041;
-        public static final int bright_foreground_light=0x7f050060;
-        public static final int bright_foreground_light_disabled=0x7f050062;
-        public static final int bright_foreground_light_inverse=0x7f050061;
+        public static final int bgcolor=0x7f080082;
+        public static final int black=0x7f08004f;
+        public static final int black_drak=0x7f08001b;
+        public static final int black_light=0x7f08001a;
+        public static final int black_overlay=0x7f080042;
+        public static final int blank_background=0x7f080043;
+        public static final int blue=0x7f080055;
+        public static final int blue_search=0x7f080041;
+        public static final int bright_foreground_light=0x7f080060;
+        public static final int bright_foreground_light_disabled=0x7f080062;
+        public static final int bright_foreground_light_inverse=0x7f080061;
         /**  蓝色背景 
          */
-        public static final int bule_bg=0x7f05007e;
-        public static final int button_text_click=0x7f05002e;
-        public static final int button_text_normal=0x7f050088;
-        public static final int button_text_pressed=0x7f050089;
-        public static final int c_ffbd3e=0x7f050022;
-        public static final int c_progressbarBg=0x7f050023;
+        public static final int bule_bg=0x7f08007e;
+        public static final int button_text_click=0x7f08002e;
+        public static final int button_text_normal=0x7f080088;
+        public static final int button_text_pressed=0x7f080089;
+        public static final int c_ffbd3e=0x7f080022;
+        public static final int c_progressbarBg=0x7f080023;
         /**  浅黄色主页背景 
          */
-        public static final int calendar_bg=0x7f05007a;
-        public static final int check_box_text_checked=0x7f05008b;
-        public static final int check_box_text_normal=0x7f05008a;
-        public static final int clicklines=0x7f05004a;
-        public static final int color_bottom_text_normal=0x7f05002a;
-        public static final int container_background=0x7f050087;
-        public static final int crach_btn_click_color=0x7f05008f;
-        public static final int crach_btn_click_colors=0x7f050090;
-        public static final int d_color=0x7f050044;
+        public static final int calendar_bg=0x7f08007a;
+        public static final int check_box_text_checked=0x7f08008b;
+        public static final int check_box_text_normal=0x7f08008a;
+        public static final int clicklines=0x7f08004a;
+        public static final int color_bottom_text_normal=0x7f08002a;
+        public static final int container_background=0x7f080087;
+        public static final int crach_btn_click_color=0x7f08008f;
+        public static final int crach_btn_click_colors=0x7f080090;
+        public static final int d_color=0x7f080044;
         /**  DateSelectorBar 
          */
-        public static final int date_selector_bar_background=0x7f05003a;
+        public static final int date_selector_bar_background=0x7f08003a;
         /**  深灰色 
          */
-        public static final int deep_grey=0x7f05008c;
+        public static final int deep_grey=0x7f08008c;
         /**  深黄背景 
          */
-        public static final int deep_yellow=0x7f05007c;
-        public static final int deeplines=0x7f050081;
-        public static final int dialogColor=0x7f050024;
-        public static final int dialogTxtColor=0x7f050025;
-        public static final int dianji=0x7f050079;
-        public static final int dim_foreground_light=0x7f050063;
-        public static final int dim_foreground_light_disabled=0x7f050064;
-        public static final int dim_foreground_light_inverse=0x7f050065;
-        public static final int dim_foreground_light_inverse_disabled=0x7f050066;
+        public static final int deep_yellow=0x7f08007c;
+        public static final int deeplines=0x7f080081;
+        public static final int dialogColor=0x7f080024;
+        public static final int dialogTxtColor=0x7f080025;
+        public static final int dianji=0x7f080079;
+        public static final int dim_foreground_light=0x7f080063;
+        public static final int dim_foreground_light_disabled=0x7f080064;
+        public static final int dim_foreground_light_inverse=0x7f080065;
+        public static final int dim_foreground_light_inverse_disabled=0x7f080066;
         /**  experience mode 
          */
-        public static final int experience_mode_background=0x7f05008d;
-        public static final int experience_mode_font=0x7f05008e;
-        public static final int face_bg=0x7f05006b;
-        public static final int fbutton_color_alizarin=0x7f050010;
-        public static final int fbutton_color_amethyst=0x7f050008;
-        public static final int fbutton_color_asbestos=0x7f050015;
-        public static final int fbutton_color_belize_hole=0x7f050007;
-        public static final int fbutton_color_carrot=0x7f05000e;
-        public static final int fbutton_color_clouds=0x7f050012;
-        public static final int fbutton_color_concrete=0x7f050014;
-        public static final int fbutton_color_emerald=0x7f050004;
-        public static final int fbutton_color_green_sea=0x7f050003;
-        public static final int fbutton_color_midnight_blue=0x7f05000b;
-        public static final int fbutton_color_nephritis=0x7f050005;
-        public static final int fbutton_color_orange=0x7f05000d;
-        public static final int fbutton_color_peter_river=0x7f050006;
-        public static final int fbutton_color_pomegranate=0x7f050011;
-        public static final int fbutton_color_pumpkin=0x7f05000f;
-        public static final int fbutton_color_silver=0x7f050013;
-        public static final int fbutton_color_sun_flower=0x7f05000c;
-        public static final int fbutton_color_transparent=0x7f050016;
-        public static final int fbutton_color_turquoise=0x7f050002;
-        public static final int fbutton_color_wet_asphalt=0x7f05000a;
-        public static final int fbutton_color_wisteria=0x7f050009;
-        public static final int fbutton_default_color=0x7f050000;
-        public static final int fbutton_default_shadow_color=0x7f050001;
+        public static final int experience_mode_background=0x7f08008d;
+        public static final int experience_mode_font=0x7f08008e;
+        public static final int face_bg=0x7f08006b;
+        public static final int fbutton_color_alizarin=0x7f080010;
+        public static final int fbutton_color_amethyst=0x7f080008;
+        public static final int fbutton_color_asbestos=0x7f080015;
+        public static final int fbutton_color_belize_hole=0x7f080007;
+        public static final int fbutton_color_carrot=0x7f08000e;
+        public static final int fbutton_color_clouds=0x7f080012;
+        public static final int fbutton_color_concrete=0x7f080014;
+        public static final int fbutton_color_emerald=0x7f080004;
+        public static final int fbutton_color_green_sea=0x7f080003;
+        public static final int fbutton_color_midnight_blue=0x7f08000b;
+        public static final int fbutton_color_nephritis=0x7f080005;
+        public static final int fbutton_color_orange=0x7f08000d;
+        public static final int fbutton_color_peter_river=0x7f080006;
+        public static final int fbutton_color_pomegranate=0x7f080011;
+        public static final int fbutton_color_pumpkin=0x7f08000f;
+        public static final int fbutton_color_silver=0x7f080013;
+        public static final int fbutton_color_sun_flower=0x7f08000c;
+        public static final int fbutton_color_transparent=0x7f080016;
+        public static final int fbutton_color_turquoise=0x7f080002;
+        public static final int fbutton_color_wet_asphalt=0x7f08000a;
+        public static final int fbutton_color_wisteria=0x7f080009;
+        public static final int fbutton_default_color=0x7f080000;
+        public static final int fbutton_default_shadow_color=0x7f080001;
         /**  系统时间控件的背景颜色 
          */
-        public static final int follow_picker_bg_color=0x7f050084;
+        public static final int follow_picker_bg_color=0x7f080084;
         /**  系统时间控件的字体颜色 
          */
-        public static final int follow_picker_color=0x7f050083;
-        public static final int frame_button_text_nor=0x7f05006c;
-        public static final int frame_button_text_select=0x7f05006d;
-        public static final int full_transparent=0x7f05005e;
-        public static final int gold=0x7f050052;
-        public static final int gray=0x7f050050;
-        public static final int grayslate=0x7f05005b;
-        public static final int graywhite=0x7f05005a;
-        public static final int green=0x7f050054;
-        public static final int guide_color=0x7f05002b;
-        public static final int half_transparent=0x7f05005f;
-        public static final int head_text=0x7f050067;
-        public static final int ku=0x7f05004b;
-        public static final int lemonyellow=0x7f050059;
+        public static final int follow_picker_color=0x7f080083;
+        public static final int frame_button_text_nor=0x7f08006c;
+        public static final int frame_button_text_select=0x7f08006d;
+        public static final int full_transparent=0x7f08005e;
+        public static final int gold=0x7f080052;
+        public static final int gray=0x7f080050;
+        public static final int grayslate=0x7f08005b;
+        public static final int graywhite=0x7f08005a;
+        public static final int green=0x7f080054;
+        public static final int guide_color=0x7f08002b;
+        public static final int half_transparent=0x7f08005f;
+        public static final int head_text=0x7f080067;
+        public static final int ku=0x7f08004b;
+        public static final int lemonyellow=0x7f080059;
         /**  浅灰背景 
          */
-        public static final int light_gray_bg=0x7f05007f;
+        public static final int light_gray_bg=0x7f08007f;
         /**  浅黄色背景 
          */
-        public static final int light_yellow=0x7f05007d;
-        public static final int lightblue=0x7f05005c;
-        public static final int lines=0x7f050048;
-        public static final int lines_bg=0x7f050049;
-        public static final int listGray=0x7f050021;
-        public static final int listItem=0x7f050020;
-        public static final int listitem_background1=0x7f050076;
-        public static final int listitem_black=0x7f05006f;
-        public static final int listitem_blue=0x7f050071;
-        public static final int listitem_gray=0x7f050072;
-        public static final int listitem_green=0x7f050073;
-        public static final int listitem_greenyellow=0x7f050074;
-        public static final int listitem_transparent=0x7f05006e;
-        public static final int listitem_white=0x7f050070;
-        public static final int listitem_yellow=0x7f050075;
-        public static final int listtext1=0x7f05003d;
-        public static final int listtext2=0x7f05003e;
-        public static final int login_delung=0x7f050038;
-        public static final int login_register=0x7f050017;
-        public static final int login_show=0x7f050039;
-        public static final int message_patient_size_color=0x7f050037;
-        public static final int msgcount=0x7f05005d;
-        public static final int mypatients_item_normal=0x7f050047;
-        public static final int myself_item_normal=0x7f050045;
-        public static final int myself_item_select=0x7f050046;
-        public static final int newsInfoList=0x7f050026;
-        public static final int orange=0x7f050058;
-        public static final int pink=0x7f050057;
-        public static final int pop_item_click_colors=0x7f050091;
-        public static final int purple=0x7f050056;
-        public static final int radiobg_normal=0x7f050040;
-        public static final int radiobg_press=0x7f05003f;
-        public static final int red=0x7f050051;
+        public static final int light_yellow=0x7f08007d;
+        public static final int lightblue=0x7f08005c;
+        public static final int lines=0x7f080048;
+        public static final int lines_bg=0x7f080049;
+        public static final int listGray=0x7f080021;
+        public static final int listItem=0x7f080020;
+        public static final int listitem_background1=0x7f080076;
+        public static final int listitem_black=0x7f08006f;
+        public static final int listitem_blue=0x7f080071;
+        public static final int listitem_gray=0x7f080072;
+        public static final int listitem_green=0x7f080073;
+        public static final int listitem_greenyellow=0x7f080074;
+        public static final int listitem_transparent=0x7f08006e;
+        public static final int listitem_white=0x7f080070;
+        public static final int listitem_yellow=0x7f080075;
+        public static final int listtext1=0x7f08003d;
+        public static final int listtext2=0x7f08003e;
+        public static final int login_delung=0x7f080038;
+        public static final int login_register=0x7f080017;
+        public static final int login_show=0x7f080039;
+        public static final int message_patient_size_color=0x7f080037;
+        public static final int msgcount=0x7f08005d;
+        public static final int mypatients_item_normal=0x7f080047;
+        public static final int myself_item_normal=0x7f080045;
+        public static final int myself_item_select=0x7f080046;
+        public static final int newsInfoList=0x7f080026;
+        public static final int orange=0x7f080058;
+        public static final int pink=0x7f080057;
+        public static final int pop_item_click_colors=0x7f080091;
+        public static final int purple=0x7f080056;
+        public static final int radiobg_normal=0x7f080040;
+        public static final int radiobg_press=0x7f08003f;
+        public static final int red=0x7f080051;
         /**  颜色设置 
          */
-        public static final int select_item_tv=0x7f050077;
-        public static final int submenu_item_tv_color=0x7f050092;
-        public static final int submenu_title_color=0x7f050093;
-        public static final int tabcolor=0x7f050078;
-        public static final int text_clickable=0x7f050036;
-        public static final int text_normal=0x7f050034;
-        public static final int text_secondary=0x7f050035;
-        public static final int text_theme=0x7f050032;
-        public static final int text_theme_dark=0x7f050033;
-        public static final int title_bar_bottom=0x7f05003b;
-        public static final int title_two_color=0x7f05003c;
-        public static final int touming=0x7f05004e;
-        public static final int transparent=0x7f050029;
-        public static final int typeBlack=0x7f05001f;
+        public static final int select_item_tv=0x7f080077;
+        public static final int submenu_item_tv_color=0x7f080092;
+        public static final int submenu_title_color=0x7f080093;
+        public static final int tabcolor=0x7f080078;
+        public static final int text_clickable=0x7f080036;
+        public static final int text_normal=0x7f080034;
+        public static final int text_secondary=0x7f080035;
+        public static final int text_theme=0x7f080032;
+        public static final int text_theme_dark=0x7f080033;
+        public static final int title_bar_bottom=0x7f08003b;
+        public static final int title_two_color=0x7f08003c;
+        public static final int touming=0x7f08004e;
+        public static final int transparent=0x7f080029;
+        public static final int typeBlack=0x7f08001f;
         /**  黑色字体 
          */
-        public static final int typeface_color_black=0x7f05007b;
+        public static final int typeface_color_black=0x7f08007b;
         /**  浅灰字体 
          */
-        public static final int typeface_color_gray=0x7f050080;
+        public static final int typeface_color_gray=0x7f080080;
         /**  统一的线的颜色 
          */
-        public static final int unit_lines_color=0x7f050095;
+        public static final int unit_lines_color=0x7f080095;
         /**  统一的bg灰色 
          */
-        public static final int unite_grey=0x7f050094;
-        public static final int weight_bar_buttondown=0x7f050069;
-        public static final int weight_bar_buttonup=0x7f05006a;
-        public static final int white=0x7f05004d;
-        public static final int white_grey=0x7f05001e;
-        public static final int white_ligght=0x7f05001d;
-        public static final int xuan=0x7f05004c;
-        public static final int yellow=0x7f050053;
+        public static final int unite_grey=0x7f080094;
+        public static final int weight_bar_buttondown=0x7f080069;
+        public static final int weight_bar_buttonup=0x7f08006a;
+        public static final int white=0x7f08004d;
+        public static final int white_grey=0x7f08001e;
+        public static final int white_ligght=0x7f08001d;
+        public static final int xuan=0x7f08004c;
+        public static final int yellow=0x7f080053;
     }
     public static final class dimen {
-        public static final int action_bar_btn_drawable_padding=0x7f060032;
-        public static final int action_bar_btn_padding_inside=0x7f060034;
-        public static final int action_bar_btn_padding_outside=0x7f060033;
-        public static final int action_bar_btn_text_size=0x7f06002f;
+        public static final int action_bar_btn_drawable_padding=0x7f060037;
+        public static final int action_bar_btn_padding_inside=0x7f060039;
+        public static final int action_bar_btn_padding_outside=0x7f060038;
+        public static final int action_bar_btn_text_size=0x7f060034;
         /**  action bar 
          */
-        public static final int action_bar_height=0x7f06002e;
-        public static final int action_bar_icon_padding=0x7f060031;
-        public static final int action_bar_title_text_size=0x7f060030;
-        public static final int actionbar_btn_drawable_padding=0x7f06000d;
-        public static final int actionbar_btn_padding_inside=0x7f06000f;
-        public static final int actionbar_btn_padding_outside=0x7f06000e;
-        public static final int actionbar_btn_text_size=0x7f06000a;
-        public static final int actionbar_height=0x7f060009;
-        public static final int actionbar_icon_padding=0x7f06000c;
-        public static final int actionbar_title_text_size=0x7f06000b;
-        public static final int actionbar_vertival_padding=0x7f060000;
-        public static final int activity_actor_left=0x7f060013;
-        public static final int activity_actor_zhongjian=0x7f060014;
+        public static final int action_bar_height=0x7f060033;
+        public static final int action_bar_icon_padding=0x7f060036;
+        public static final int action_bar_title_text_size=0x7f060035;
+        public static final int actionbar_btn_drawable_padding=0x7f060012;
+        public static final int actionbar_btn_padding_inside=0x7f060014;
+        public static final int actionbar_btn_padding_outside=0x7f060013;
+        public static final int actionbar_btn_text_size=0x7f06000f;
+        public static final int actionbar_height=0x7f06000e;
+        public static final int actionbar_icon_padding=0x7f060011;
+        public static final int actionbar_title_text_size=0x7f060010;
+        public static final int actionbar_vertival_padding=0x7f060005;
+        public static final int activity_actor_left=0x7f060018;
+        public static final int activity_actor_zhongjian=0x7f060019;
         /** 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f060015;
-        public static final int activity_vertical_margin=0x7f060016;
+        public static final int activity_horizontal_margin=0x7f06001a;
+        public static final int activity_vertical_margin=0x7f06001b;
         /**  listviewpys com.zsl 
          */
-        public static final int base_action_bar_height=0x7f060007;
-        public static final int button_text_size=0x7f060035;
-        public static final int check_box_text_size=0x7f060036;
+        public static final int base_action_bar_height=0x7f06000c;
+        public static final int button_text_size=0x7f06003a;
+        public static final int check_box_text_size=0x7f06003b;
         /**  字体设置 
          */
-        public static final int content_size=0x7f060027;
-        public static final int doctor_mypatients_item_TextSize1=0x7f060019;
-        public static final int doctor_mypatients_item_TextSize2=0x7f06001a;
-        public static final int doctorloginbuttonTextSize=0x7f060017;
-        public static final int doctorlogintitleTextSize=0x7f060018;
-        public static final int fbutton_default_conner_radius=0x7f060001;
-        public static final int fbutton_default_padding_bottom=0x7f060005;
-        public static final int fbutton_default_padding_left=0x7f060002;
-        public static final int fbutton_default_padding_right=0x7f060003;
-        public static final int fbutton_default_padding_top=0x7f060004;
-        public static final int fbutton_default_shadow_height=0x7f060006;
-        public static final int item_height=0x7f060029;
+        public static final int content_size=0x7f06002c;
+        public static final int doctor_mypatients_item_TextSize1=0x7f06001e;
+        public static final int doctor_mypatients_item_TextSize2=0x7f06001f;
+        public static final int doctorloginbuttonTextSize=0x7f06001c;
+        public static final int doctorlogintitleTextSize=0x7f06001d;
+        public static final int fbutton_default_conner_radius=0x7f060006;
+        public static final int fbutton_default_padding_bottom=0x7f06000a;
+        public static final int fbutton_default_padding_left=0x7f060007;
+        public static final int fbutton_default_padding_right=0x7f060008;
+        public static final int fbutton_default_padding_top=0x7f060009;
+        public static final int fbutton_default_shadow_height=0x7f06000b;
+        public static final int header_footer_left_right_padding=0x7f060003;
+        public static final int header_footer_top_bottom_padding=0x7f060004;
+        public static final int indicator_corner_radius=0x7f060001;
+        public static final int indicator_internal_padding=0x7f060002;
+        public static final int indicator_right_padding=0x7f060000;
+        public static final int item_height=0x7f06002e;
         /**  高度设置 
          */
-        public static final int margin_top=0x7f060028;
+        public static final int margin_top=0x7f06002d;
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int padding10=0x7f060008;
-        public static final int rdo1=0x7f06001b;
-        public static final int rdo10=0x7f060024;
-        public static final int rdo11=0x7f060025;
-        public static final int rdo12=0x7f060026;
-        public static final int rdo2=0x7f06001c;
-        public static final int rdo3=0x7f06001d;
-        public static final int rdo4=0x7f06001e;
-        public static final int rdo5=0x7f06001f;
-        public static final int rdo6=0x7f060020;
-        public static final int rdo7=0x7f060021;
-        public static final int rdo8=0x7f060022;
-        public static final int rdo9=0x7f060023;
+        public static final int padding10=0x7f06000d;
+        public static final int rdo1=0x7f060020;
+        public static final int rdo10=0x7f060029;
+        public static final int rdo11=0x7f06002a;
+        public static final int rdo12=0x7f06002b;
+        public static final int rdo2=0x7f060021;
+        public static final int rdo3=0x7f060022;
+        public static final int rdo4=0x7f060023;
+        public static final int rdo5=0x7f060024;
+        public static final int rdo6=0x7f060025;
+        public static final int rdo7=0x7f060026;
+        public static final int rdo8=0x7f060027;
+        public static final int rdo9=0x7f060028;
         /**  下拉菜单属性 
          */
-        public static final int submenu_item_ll_height=0x7f06002a;
-        public static final int submenu_item_tv_size=0x7f06002b;
-        public static final int submenu_margin_top=0x7f06002c;
-        public static final int submenu_tv_titile=0x7f06002d;
-        public static final int text_big_size=0x7f060010;
-        public static final int text_normal_size=0x7f060011;
-        public static final int text_small_size=0x7f060012;
+        public static final int submenu_item_ll_height=0x7f06002f;
+        public static final int submenu_item_tv_size=0x7f060030;
+        public static final int submenu_margin_top=0x7f060031;
+        public static final int submenu_tv_titile=0x7f060032;
+        public static final int text_big_size=0x7f060015;
+        public static final int text_normal_size=0x7f060016;
+        public static final int text_small_size=0x7f060017;
         /**  统一的左右边距 
          */
-        public static final int unit_left_right_marge=0x7f060042;
+        public static final int unit_left_right_marge=0x7f060047;
         /**  统一的线的高度
          */
-        public static final int unit_lines_height=0x7f060041;
+        public static final int unit_lines_height=0x7f060046;
         /**  统一的头像大小 
          */
-        public static final int unite_icon_size=0x7f06003b;
+        public static final int unite_icon_size=0x7f060040;
         /**  统一的头像大小 
          */
-        public static final int unite_icon_size_small=0x7f06003c;
+        public static final int unite_icon_size_small=0x7f060041;
         /**  统一的项目高度 
          */
-        public static final int unite_pro_height=0x7f06003f;
+        public static final int unite_pro_height=0x7f060044;
         /**  统一的项目高度大 
          */
-        public static final int unite_pro_height_big=0x7f060040;
+        public static final int unite_pro_height_big=0x7f060045;
         /**  统一的title下第二项以后的高度 
          */
-        public static final int unite_title_more_height=0x7f06003e;
+        public static final int unite_title_more_height=0x7f060043;
         /**  统一的title下第一项的高度 
          */
-        public static final int unite_title_one_height=0x7f06003d;
-        public static final int unite_tv_pop_list_size=0x7f060039;
+        public static final int unite_title_one_height=0x7f060042;
+        public static final int unite_tv_pop_list_size=0x7f06003e;
         /**  统一的列表字体 
          */
-        public static final int unite_tv_size=0x7f060038;
+        public static final int unite_tv_size=0x7f06003d;
         /**  统一的列表字体大 
          */
-        public static final int unite_tv_size_big=0x7f06003a;
+        public static final int unite_tv_size_big=0x7f06003f;
         /**  统一的列表字体小 
          */
-        public static final int unite_tv_size_small=0x7f060037;
+        public static final int unite_tv_size_small=0x7f06003c;
     }
     public static final class drawable {
         public static final int aaa=0x7f020000;
@@ -647,495 +791,522 @@ containing a value of this type.
         public static final int current_day_bgc=0x7f020092;
         public static final int database=0x7f020093;
         public static final int database_press=0x7f020094;
-        public static final int delete=0x7f020095;
-        public static final int delete_edit=0x7f020096;
-        public static final int delete_gray=0x7f020097;
-        public static final int dialog_assort=0x7f020098;
-        public static final int dialog_background=0x7f020099;
-        public static final int dialog_selector=0x7f02009a;
-        public static final int dialog_selector_left=0x7f02009b;
-        public static final int dialog_selector_right=0x7f02009c;
-        public static final int dialog_set_time_divider=0x7f02009d;
-        public static final int dialog_tab1_1=0x7f02009e;
-        public static final int dialog_tab1_2=0x7f02009f;
-        public static final int dialog_tab2_1=0x7f0200a0;
-        public static final int dialog_tab2_2=0x7f0200a1;
-        public static final int docter_patient_manager_select_right=0x7f0200a2;
-        public static final int doctor01_02=0x7f0200a3;
-        public static final int doctor02_04=0x7f0200a4;
-        public static final int doctor03_03=0x7f0200a5;
-        public static final int doctor04_05=0x7f0200a6;
-        public static final int doctor1=0x7f0200a7;
-        public static final int doctor2=0x7f0200a8;
-        public static final int doctor_addpatient_followup01=0x7f0200a9;
-        public static final int doctor_addpatient_followup02=0x7f0200aa;
-        public static final int doctor_addpatient_followup_selector=0x7f0200ab;
-        public static final int doctor_alarm=0x7f0200ac;
-        public static final int doctor_attestation_click=0x7f0200ad;
-        public static final int doctor_attestation_show=0x7f0200ae;
-        public static final int doctor_color_selector=0x7f0200af;
-        public static final int doctor_first=0x7f0200b0;
-        public static final int doctor_icon=0x7f0200b1;
-        public static final int doctor_login_button01=0x7f0200b2;
-        public static final int doctor_login_button02=0x7f0200b3;
-        public static final int doctor_login_button_selector=0x7f0200b4;
-        public static final int doctor_login_checked_false=0x7f0200b5;
-        public static final int doctor_login_checked_selector=0x7f0200b6;
-        public static final int doctor_login_checked_true=0x7f0200b7;
-        public static final int doctor_login_icon_background=0x7f0200b8;
-        public static final int doctor_login_input_background=0x7f0200b9;
-        public static final int doctor_login_name_icon=0x7f0200ba;
-        public static final int doctor_login_password_icon=0x7f0200bb;
-        public static final int doctor_login_passwordedit_background=0x7f0200bc;
-        public static final int doctor_login_profile_background=0x7f0200bd;
-        public static final int doctor_math=0x7f0200be;
-        public static final int doctor_mypatients_addpatient01=0x7f0200bf;
-        public static final int doctor_mypatients_addpatient02=0x7f0200c0;
-        public static final int doctor_mypatients_addpatient_selector=0x7f0200c1;
-        public static final int doctor_mypatients_backgroud=0x7f0200c2;
-        public static final int doctor_mypatients_group=0x7f0200c3;
-        public static final int doctor_myself_item_selector=0x7f0200c4;
-        public static final int doctor_patient_exam_edit_bg=0x7f0200c5;
-        public static final int doctor_patient_exam_item_title_bg=0x7f0200c6;
-        public static final int doctor_patient_manager_button_bg=0x7f0200c7;
-        public static final int doctor_patient_manager_button_bg_nor=0x7f0200c8;
-        public static final int doctor_patient_manager_button_bg_sel=0x7f0200c9;
-        public static final int doctor_patient_manager_summary_bg=0x7f0200ca;
-        public static final int doctor_patient_medical_history_calendar=0x7f0200cb;
-        public static final int doctor_patient_medical_history_camera=0x7f0200cc;
-        public static final int doctor_patient_medical_history_edit=0x7f0200cd;
-        public static final int doctor_patient_medical_history_folder=0x7f0200ce;
-        public static final int doctor_patient_medical_history_microphone=0x7f0200cf;
-        public static final int doctor_patient_medical_history_notepad=0x7f0200d0;
-        public static final int doctor_patient_physiological_info_add=0x7f0200d1;
-        public static final int doctor_patient_search_bg=0x7f0200d2;
-        public static final int doctor_patient_search_close=0x7f0200d3;
-        public static final int doctor_patient_search_search=0x7f0200d4;
-        public static final int doctor_patient_search_text=0x7f0200d5;
-        public static final int doctor_patient_study_bg=0x7f0200d6;
-        public static final int doctor_people=0x7f0200d7;
-        public static final int doctor_photos=0x7f0200d8;
-        public static final int doctor_register_backgroud=0x7f0200d9;
-        public static final int doctor_register_choosebutton01=0x7f0200da;
-        public static final int doctor_register_choosebutton02=0x7f0200db;
-        public static final int doctor_register_choosebutton_selector=0x7f0200dc;
-        public static final int doctor_register_logo=0x7f0200dd;
-        public static final int doctor_register_wordsbackgroud=0x7f0200de;
-        public static final int doctor_spinner_hui_bg=0x7f0200df;
-        public static final int doctor_spinner_hui_select=0x7f0200e0;
-        public static final int doctor_spinner_select=0x7f0200e1;
-        public static final int doctor_upload_photo=0x7f0200e2;
-        public static final int doctor_wheelview_cancel=0x7f0200e3;
-        public static final int doctor_wheelview_confirm=0x7f0200e4;
-        public static final int doctorcolor_click=0x7f0200e5;
-        public static final int doctorcolor_write_click=0x7f0200e6;
-        public static final int doctorguide0=0x7f0200e7;
-        public static final int doctorguide1=0x7f0200e8;
-        public static final int doctorguide2=0x7f0200e9;
-        public static final int doctorguide3=0x7f0200ea;
-        public static final int doctorimage=0x7f0200eb;
-        public static final int doctorloading=0x7f0200ec;
-        public static final int doctorlogin=0x7f0200ed;
-        public static final int doctortab1=0x7f0200ee;
-        public static final int doctortab2=0x7f0200ef;
-        public static final int dowlad01=0x7f0200f0;
-        public static final int dowload01=0x7f0200f1;
-        public static final int edit_patient=0x7f0200f2;
-        public static final int elec_shap=0x7f0200f3;
-        public static final int elec_shaps=0x7f0200f4;
-        public static final int follow_little=0x7f0200f5;
-        public static final int follow_time_bg=0x7f0200f6;
-        public static final int frame_loading=0x7f0200f7;
-        public static final int function_of_interpretation=0x7f0200f8;
-        public static final int github_loading_inner=0x7f0200f9;
-        public static final int github_loading_outer=0x7f0200fa;
-        public static final int group_icon1=0x7f0200fb;
-        public static final int group_icon2=0x7f0200fc;
-        public static final int group_selected=0x7f0200fd;
-        public static final int head=0x7f0200fe;
-        public static final int header_bg=0x7f0200ff;
-        public static final int health_chemotherapy_record_background=0x7f020100;
-        public static final int health_contact_record_background=0x7f020101;
-        public static final int health_follow_record_background=0x7f020102;
-        public static final int health_iphone_background=0x7f020103;
-        public static final int health_linear_background=0x7f020104;
-        public static final int health_medical_record_background=0x7f020105;
-        public static final int health_subscribe_record_background=0x7f020106;
-        public static final int health_time_line_delete=0x7f020107;
-        public static final int http=0x7f020108;
-        public static final int http_press=0x7f020109;
-        public static final int iamgeview_selectors=0x7f02010a;
-        public static final int ic_launcher=0x7f02010b;
-        public static final int ico_list_item_line_popupwindow=0x7f02010c;
-        public static final int icon=0x7f02010d;
-        public static final int icon_affirm=0x7f02010e;
-        public static final int icon_btimap=0x7f02010f;
-        public static final int icon_camera=0x7f020110;
-        public static final int icon_cancel=0x7f020111;
-        public static final int icon_database=0x7f020112;
-        public static final int icon_http=0x7f020113;
-        public static final int icon_image_delete=0x7f020114;
-        public static final int icon_msg_search=0x7f020115;
-        public static final int icon_newly_increased=0x7f020116;
-        public static final int iner=0x7f020117;
-        public static final int jiantou=0x7f020118;
-        public static final int jiantou2=0x7f020119;
-        public static final int jiantou_right=0x7f02011a;
-        public static final int keyanguanli_bg=0x7f02011b;
-        public static final int kong=0x7f02011c;
-        public static final int kuang=0x7f02011d;
-        public static final int layout_bg=0x7f02011e;
-        public static final int left=0x7f02011f;
-        public static final int left2=0x7f020120;
-        public static final int left_selector=0x7f020121;
-        public static final int left_write=0x7f020122;
-        public static final int left_write_selector=0x7f020123;
-        public static final int line_layout_doctor_attestation_background=0x7f020124;
-        public static final int lines_click=0x7f020125;
-        public static final int list_item_color_bg=0x7f020126;
-        public static final int listitem_patient_medical_history_bg=0x7f020127;
-        public static final int listitem_yuan=0x7f020128;
-        public static final int listitem_yuan_big=0x7f020129;
-        public static final int listview_divider_line=0x7f02012a;
-        public static final int listview_item_selector=0x7f02012b;
-        public static final int listview_item_selector_bg=0x7f02012c;
-        public static final int listview_pop_item=0x7f02012d;
-        public static final int loading=0x7f02012e;
-        public static final int loading2=0x7f02012f;
-        public static final int loading3=0x7f020130;
-        public static final int loading_0=0x7f020131;
-        public static final int loading_01=0x7f020132;
-        public static final int loading_02=0x7f020133;
-        public static final int loading_03=0x7f020134;
-        public static final int loading_04=0x7f020135;
-        public static final int loading_05=0x7f020136;
-        public static final int loading_06=0x7f020137;
-        public static final int loading_07=0x7f020138;
-        public static final int loading_08=0x7f020139;
-        public static final int loading_09=0x7f02013a;
-        public static final int loading_1=0x7f02013b;
-        public static final int loading_10=0x7f02013c;
-        public static final int loading_11=0x7f02013d;
-        public static final int loading_12=0x7f02013e;
-        public static final int loading_2=0x7f02013f;
-        public static final int loading_3=0x7f020140;
-        public static final int loading_360=0x7f020141;
-        public static final int loading_4=0x7f020142;
-        public static final int loading_40=0x7f020143;
-        public static final int loading_5=0x7f020144;
-        public static final int loading_6=0x7f020145;
-        public static final int loading_7=0x7f020146;
-        public static final int loading_bg=0x7f020147;
-        public static final int loading_error=0x7f020148;
-        public static final int loading_mask=0x7f020149;
-        public static final int loading_mydialog=0x7f02014a;
-        public static final int loading_progress=0x7f02014b;
-        public static final int luyin01=0x7f02014c;
-        public static final int marker=0x7f02014d;
-        public static final int medical_record_little=0x7f02014e;
-        public static final int menu_bg=0x7f02014f;
-        public static final int menudialog_bottom2_selector=0x7f020150;
-        public static final int menudialog_bottom_selector=0x7f020151;
-        public static final int menudialog_center_selector=0x7f020152;
-        public static final int menudialog_top_selector=0x7f020153;
-        public static final int message_email=0x7f020154;
-        public static final int message_patient_add_background=0x7f020155;
-        public static final int mm_listitem=0x7f020156;
-        public static final int mm_listitem_grey_normal=0x7f020157;
-        public static final int mm_listitem_normal=0x7f020158;
-        public static final int mm_listitem_pressed=0x7f020159;
-        public static final int mm_listitem_simple=0x7f02015a;
-        public static final int modifychemotherapy=0x7f02015b;
-        public static final int msgcount=0x7f02015c;
-        public static final int my_colleague_add_doctor_black_border=0x7f02015d;
-        public static final int next_button=0x7f02015e;
-        public static final int next_month=0x7f02015f;
-        public static final int no_this_month=0x7f020160;
-        public static final int np_numberpicker_down_btn_holo_dark=0x7f020161;
-        public static final int np_numberpicker_down_btn_holo_light=0x7f020162;
-        public static final int np_numberpicker_down_disabled_focused_holo_dark=0x7f020163;
-        public static final int np_numberpicker_down_disabled_focused_holo_light=0x7f020164;
-        public static final int np_numberpicker_down_disabled_holo_dark=0x7f020165;
-        public static final int np_numberpicker_down_disabled_holo_light=0x7f020166;
-        public static final int np_numberpicker_down_focused_holo_dark=0x7f020167;
-        public static final int np_numberpicker_down_focused_holo_light=0x7f020168;
-        public static final int np_numberpicker_down_longpressed_holo_dark=0x7f020169;
-        public static final int np_numberpicker_down_longpressed_holo_light=0x7f02016a;
-        public static final int np_numberpicker_down_normal_holo_dark=0x7f02016b;
-        public static final int np_numberpicker_down_normal_holo_light=0x7f02016c;
-        public static final int np_numberpicker_down_pressed_holo_dark=0x7f02016d;
-        public static final int np_numberpicker_down_pressed_holo_light=0x7f02016e;
-        public static final int np_numberpicker_up_btn_holo_dark=0x7f02016f;
-        public static final int np_numberpicker_up_btn_holo_light=0x7f020170;
-        public static final int np_numberpicker_up_disabled_focused_holo_dark=0x7f020171;
-        public static final int np_numberpicker_up_disabled_focused_holo_light=0x7f020172;
-        public static final int np_numberpicker_up_disabled_holo_dark=0x7f020173;
-        public static final int np_numberpicker_up_disabled_holo_light=0x7f020174;
-        public static final int np_numberpicker_up_focused_holo_dark=0x7f020175;
-        public static final int np_numberpicker_up_focused_holo_light=0x7f020176;
-        public static final int np_numberpicker_up_longpressed_holo_dark=0x7f020177;
-        public static final int np_numberpicker_up_longpressed_holo_light=0x7f020178;
-        public static final int np_numberpicker_up_normal_holo_dark=0x7f020179;
-        public static final int np_numberpicker_up_normal_holo_light=0x7f02017a;
-        public static final int np_numberpicker_up_pressed_holo_dark=0x7f02017b;
-        public static final int np_numberpicker_up_pressed_holo_light=0x7f02017c;
-        public static final int opened=0x7f02017d;
-        public static final int page=0x7f02017e;
-        public static final int page_now=0x7f02017f;
-        public static final int patient1=0x7f020180;
-        public static final int patient2=0x7f020181;
-        public static final int patient_count=0x7f020182;
-        public static final int patient_group_down=0x7f020183;
-        public static final int patient_group_down_up_selector=0x7f020184;
-        public static final int patient_group_up=0x7f020185;
-        public static final int patient_login_frist1=0x7f020186;
-        public static final int patient_login_frist2=0x7f020187;
-        public static final int patient_login_frist3=0x7f020188;
-        public static final int patient_login_input_background=0x7f020189;
-        public static final int patient_manage_state=0x7f02018a;
-        public static final int patient_phone=0x7f02018b;
-        public static final int patient_search=0x7f02018c;
-        public static final int patient_search1=0x7f02018d;
-        public static final int patientdelete=0x7f02018e;
-        public static final int patientdown=0x7f02018f;
-        public static final int patientgroup_edit=0x7f020190;
-        public static final int patientgroup_selected=0x7f020191;
-        public static final int patienttab1=0x7f020192;
-        public static final int patienttab2=0x7f020193;
-        public static final int patientup=0x7f020194;
-        public static final int pattern1=0x7f020195;
-        public static final int photo_shap=0x7f020196;
-        public static final int pop_layout_radio=0x7f020197;
-        public static final int previous_button=0x7f020198;
-        public static final int previous_month=0x7f020199;
-        public static final int progress_bg=0x7f02019a;
-        public static final int qipao=0x7f02019b;
-        public static final int qrcode=0x7f02019c;
-        public static final int quxiao03=0x7f02019d;
-        public static final int radio_group_one=0x7f02019e;
-        public static final int radio_group_there=0x7f02019f;
-        public static final int radio_group_two=0x7f0201a0;
-        public static final int radio_icon_balck=0x7f0201a1;
-        public static final int radio_icon_white=0x7f0201a2;
-        public static final int radiobtn_bg=0x7f0201a3;
-        public static final int radiobtn_selector=0x7f0201a4;
-        public static final int redround=0x7f0201a5;
-        public static final int register_hospital=0x7f0201a6;
-        public static final int register_name=0x7f0201a7;
-        public static final int register_password=0x7f0201a8;
-        public static final int register_phone=0x7f0201a9;
-        public static final int register_verification=0x7f0201aa;
-        public static final int research_state1=0x7f0201ab;
-        public static final int research_state2=0x7f0201ac;
-        public static final int research_state3=0x7f0201ad;
-        public static final int research_state4=0x7f0201ae;
-        public static final int research_state5=0x7f0201af;
-        public static final int right=0x7f0201b0;
-        public static final int right2=0x7f0201b1;
-        public static final int right_selector=0x7f0201b2;
-        public static final int rotate_loading_360=0x7f0201b3;
-        public static final int rotate_loading_github=0x7f0201b4;
-        public static final int round_1=0x7f0201b5;
-        public static final int round_10=0x7f0201b6;
-        public static final int round_2=0x7f0201b7;
-        public static final int round_3=0x7f0201b8;
-        public static final int round_4=0x7f0201b9;
-        public static final int round_5=0x7f0201ba;
-        public static final int round_6=0x7f0201bb;
-        public static final int round_7=0x7f0201bc;
-        public static final int round_8=0x7f0201bd;
-        public static final int round_9=0x7f0201be;
-        public static final int search_clear=0x7f0201bf;
-        public static final int search_clear_normal=0x7f0201c0;
-        public static final int search_clear_pressed=0x7f0201c1;
-        public static final int searcheviewbutton=0x7f0201c2;
-        public static final int searcheviewcanl=0x7f0201c3;
-        public static final int searchmainactivity=0x7f0201c4;
-        public static final int selected=0x7f0201c5;
-        public static final int selecttime_wheel_bg=0x7f0201c6;
-        public static final int selecttime_wheel_val=0x7f0201c7;
-        public static final int setting_bg_popupwindow=0x7f0201c8;
-        public static final int setting_top_background=0x7f0201c9;
-        public static final int setting_top_pull_down=0x7f0201ca;
-        public static final int shaps=0x7f0201cb;
-        public static final int share=0x7f0201cc;
-        public static final int share1=0x7f0201cd;
-        public static final int share_left=0x7f0201ce;
-        public static final int share_right=0x7f0201cf;
-        public static final int share_selector=0x7f0201d0;
-        public static final int snow=0x7f0201d1;
-        public static final int spinner_title_bg=0x7f0201d2;
-        public static final int start_stop=0x7f0201d3;
-        public static final int stroke_dialog=0x7f0201d4;
-        public static final int stroke_dialog_down=0x7f0201d5;
-        public static final int stroke_dialog_down_left=0x7f0201d6;
-        public static final int stroke_dialog_down_right=0x7f0201d7;
-        public static final int subscribe_little=0x7f0201d8;
-        public static final int tab1=0x7f0201d9;
-        public static final int tab1_1=0x7f0201da;
-        public static final int tab1_2=0x7f0201db;
-        public static final int tab2=0x7f0201dc;
-        public static final int tab2_1=0x7f0201dd;
-        public static final int tab2_2=0x7f0201de;
-        public static final int tab3=0x7f0201df;
-        public static final int tab3_1=0x7f0201e0;
-        public static final int tab3_2=0x7f0201e1;
-        public static final int tab4=0x7f0201e2;
-        public static final int tab4_1=0x7f0201e3;
-        public static final int tab4_2=0x7f0201e4;
-        public static final int tab_background=0x7f0201e5;
-        public static final int tab_item=0x7f0201e6;
-        public static final int tab_item_press=0x7f0201e7;
-        public static final int tabhost_lines=0x7f0201e8;
-        public static final int test_doctor_quickmark_develop=0x7f0201e9;
-        public static final int test_doctor_quickmark_test=0x7f0201ea;
-        public static final int tick=0x7f0201eb;
-        public static final int time_line_shadow=0x7f0201ec;
-        public static final int tingzhi=0x7f0201ed;
-        public static final int titlejianbian=0x7f0201ee;
-        public static final int titlejianbian_left_selector=0x7f0201ef;
-        public static final int titlejianbian_pressed=0x7f0201f0;
-        public static final int titlejianbian_selector=0x7f0201f1;
-        public static final int today_calender_bg=0x7f0201f2;
-        public static final int toggle_me=0x7f0201f3;
-        public static final int tongyong_ed=0x7f0201f4;
-        public static final int tongyong_edittext=0x7f0201f5;
-        public static final int top_bar=0x7f0201f6;
-        public static final int touming=0x7f0201f7;
-        public static final int touming_elector=0x7f0201f8;
-        public static final int triangle=0x7f0201f9;
-        public static final int trues=0x7f0201fa;
-        public static final int tweet_confirm_dialog_load=0x7f0201fb;
-        public static final int tweet_custom_loading=0x7f0201fc;
-        public static final int update_shouqi=0x7f0201fd;
-        public static final int user_add_top_bg=0x7f0201fe;
-        public static final int v2_gallery_contacts_dialog_background=0x7f0201ff;
-        public static final int v2_sortlistview_sidebar_background=0x7f020200;
-        public static final int voice_rcd_btn_pressed=0x7f020201;
-        public static final int week=0x7f020202;
-        public static final int week1=0x7f020203;
-        public static final int week2=0x7f020204;
-        public static final int week_headbg=0x7f020205;
-        public static final int wheel_bg=0x7f020206;
-        public static final int wheel_val=0x7f020207;
-        public static final int wifi01=0x7f020208;
-        public static final int wifi02=0x7f020209;
-        public static final int work_manager_state=0x7f02020a;
-        public static final int xialakuang=0x7f02020b;
-        public static final int xialakuang01=0x7f02020c;
-        public static final int xialakuang01_02=0x7f02020d;
-        public static final int xialatubiao=0x7f02020e;
-        public static final int xiugai004=0x7f02020f;
-        public static final int xlistview_arrow=0x7f020210;
-        public static final int zhaoxianji=0x7f020211;
+        public static final int default_ptr_flip=0x7f020095;
+        public static final int default_ptr_rotate=0x7f020096;
+        public static final int delete=0x7f020097;
+        public static final int delete_edit=0x7f020098;
+        public static final int delete_gray=0x7f020099;
+        public static final int dialog_assort=0x7f02009a;
+        public static final int dialog_background=0x7f02009b;
+        public static final int dialog_selector=0x7f02009c;
+        public static final int dialog_selector_left=0x7f02009d;
+        public static final int dialog_selector_right=0x7f02009e;
+        public static final int dialog_set_time_divider=0x7f02009f;
+        public static final int dialog_tab1_1=0x7f0200a0;
+        public static final int dialog_tab1_2=0x7f0200a1;
+        public static final int dialog_tab2_1=0x7f0200a2;
+        public static final int dialog_tab2_2=0x7f0200a3;
+        public static final int docter_patient_manager_select_right=0x7f0200a4;
+        public static final int doctor01_02=0x7f0200a5;
+        public static final int doctor02_04=0x7f0200a6;
+        public static final int doctor03_03=0x7f0200a7;
+        public static final int doctor04_05=0x7f0200a8;
+        public static final int doctor1=0x7f0200a9;
+        public static final int doctor2=0x7f0200aa;
+        public static final int doctor_addpatient_followup01=0x7f0200ab;
+        public static final int doctor_addpatient_followup02=0x7f0200ac;
+        public static final int doctor_addpatient_followup_selector=0x7f0200ad;
+        public static final int doctor_alarm=0x7f0200ae;
+        public static final int doctor_attestation_click=0x7f0200af;
+        public static final int doctor_attestation_show=0x7f0200b0;
+        public static final int doctor_color_selector=0x7f0200b1;
+        public static final int doctor_first=0x7f0200b2;
+        public static final int doctor_icon=0x7f0200b3;
+        public static final int doctor_login_button01=0x7f0200b4;
+        public static final int doctor_login_button02=0x7f0200b5;
+        public static final int doctor_login_button_selector=0x7f0200b6;
+        public static final int doctor_login_checked_false=0x7f0200b7;
+        public static final int doctor_login_checked_selector=0x7f0200b8;
+        public static final int doctor_login_checked_true=0x7f0200b9;
+        public static final int doctor_login_icon_background=0x7f0200ba;
+        public static final int doctor_login_input_background=0x7f0200bb;
+        public static final int doctor_login_name_icon=0x7f0200bc;
+        public static final int doctor_login_password_icon=0x7f0200bd;
+        public static final int doctor_login_passwordedit_background=0x7f0200be;
+        public static final int doctor_login_profile_background=0x7f0200bf;
+        public static final int doctor_math=0x7f0200c0;
+        public static final int doctor_mypatients_addpatient01=0x7f0200c1;
+        public static final int doctor_mypatients_addpatient02=0x7f0200c2;
+        public static final int doctor_mypatients_addpatient_selector=0x7f0200c3;
+        public static final int doctor_mypatients_backgroud=0x7f0200c4;
+        public static final int doctor_mypatients_group=0x7f0200c5;
+        public static final int doctor_myself_item_selector=0x7f0200c6;
+        public static final int doctor_patient_exam_edit_bg=0x7f0200c7;
+        public static final int doctor_patient_exam_item_title_bg=0x7f0200c8;
+        public static final int doctor_patient_manager_button_bg=0x7f0200c9;
+        public static final int doctor_patient_manager_button_bg_nor=0x7f0200ca;
+        public static final int doctor_patient_manager_button_bg_sel=0x7f0200cb;
+        public static final int doctor_patient_manager_summary_bg=0x7f0200cc;
+        public static final int doctor_patient_medical_history_calendar=0x7f0200cd;
+        public static final int doctor_patient_medical_history_camera=0x7f0200ce;
+        public static final int doctor_patient_medical_history_edit=0x7f0200cf;
+        public static final int doctor_patient_medical_history_folder=0x7f0200d0;
+        public static final int doctor_patient_medical_history_microphone=0x7f0200d1;
+        public static final int doctor_patient_medical_history_notepad=0x7f0200d2;
+        public static final int doctor_patient_physiological_info_add=0x7f0200d3;
+        public static final int doctor_patient_search_bg=0x7f0200d4;
+        public static final int doctor_patient_search_close=0x7f0200d5;
+        public static final int doctor_patient_search_search=0x7f0200d6;
+        public static final int doctor_patient_search_text=0x7f0200d7;
+        public static final int doctor_patient_study_bg=0x7f0200d8;
+        public static final int doctor_people=0x7f0200d9;
+        public static final int doctor_photos=0x7f0200da;
+        public static final int doctor_register_backgroud=0x7f0200db;
+        public static final int doctor_register_choosebutton01=0x7f0200dc;
+        public static final int doctor_register_choosebutton02=0x7f0200dd;
+        public static final int doctor_register_choosebutton_selector=0x7f0200de;
+        public static final int doctor_register_logo=0x7f0200df;
+        public static final int doctor_register_wordsbackgroud=0x7f0200e0;
+        public static final int doctor_spinner_hui_bg=0x7f0200e1;
+        public static final int doctor_spinner_hui_select=0x7f0200e2;
+        public static final int doctor_spinner_select=0x7f0200e3;
+        public static final int doctor_upload_photo=0x7f0200e4;
+        public static final int doctor_wheelview_cancel=0x7f0200e5;
+        public static final int doctor_wheelview_confirm=0x7f0200e6;
+        public static final int doctorcolor_click=0x7f0200e7;
+        public static final int doctorcolor_write_click=0x7f0200e8;
+        public static final int doctorguide0=0x7f0200e9;
+        public static final int doctorguide1=0x7f0200ea;
+        public static final int doctorguide2=0x7f0200eb;
+        public static final int doctorguide3=0x7f0200ec;
+        public static final int doctorimage=0x7f0200ed;
+        public static final int doctorloading=0x7f0200ee;
+        public static final int doctorlogin=0x7f0200ef;
+        public static final int doctortab1=0x7f0200f0;
+        public static final int doctortab2=0x7f0200f1;
+        public static final int dowlad01=0x7f0200f2;
+        public static final int dowload01=0x7f0200f3;
+        public static final int edit_patient=0x7f0200f4;
+        public static final int elec_shap=0x7f0200f5;
+        public static final int elec_shaps=0x7f0200f6;
+        public static final int follow_little=0x7f0200f7;
+        public static final int follow_time_bg=0x7f0200f8;
+        public static final int frame_loading=0x7f0200f9;
+        public static final int function_of_interpretation=0x7f0200fa;
+        public static final int github_loading_inner=0x7f0200fb;
+        public static final int github_loading_outer=0x7f0200fc;
+        public static final int group_icon1=0x7f0200fd;
+        public static final int group_icon2=0x7f0200fe;
+        public static final int group_selected=0x7f0200ff;
+        public static final int head=0x7f020100;
+        public static final int header_bg=0x7f020101;
+        public static final int health_chemotherapy_record_background=0x7f020102;
+        public static final int health_contact_record_background=0x7f020103;
+        public static final int health_follow_record_background=0x7f020104;
+        public static final int health_iphone_background=0x7f020105;
+        public static final int health_linear_background=0x7f020106;
+        public static final int health_medical_record_background=0x7f020107;
+        public static final int health_subscribe_record_background=0x7f020108;
+        public static final int health_time_line_delete=0x7f020109;
+        public static final int http=0x7f02010a;
+        public static final int http_press=0x7f02010b;
+        public static final int iamgeview_selectors=0x7f02010c;
+        public static final int ic_launcher=0x7f02010d;
+        public static final int ico_list_item_line_popupwindow=0x7f02010e;
+        public static final int icon=0x7f02010f;
+        public static final int icon_affirm=0x7f020110;
+        public static final int icon_btimap=0x7f020111;
+        public static final int icon_camera=0x7f020112;
+        public static final int icon_cancel=0x7f020113;
+        public static final int icon_database=0x7f020114;
+        public static final int icon_http=0x7f020115;
+        public static final int icon_image_delete=0x7f020116;
+        public static final int icon_msg_search=0x7f020117;
+        public static final int icon_newly_increased=0x7f020118;
+        public static final int indicator_arrow=0x7f020119;
+        public static final int indicator_bg_bottom=0x7f02011a;
+        public static final int indicator_bg_top=0x7f02011b;
+        public static final int iner=0x7f02011c;
+        public static final int jiantou=0x7f02011d;
+        public static final int jiantou2=0x7f02011e;
+        public static final int jiantou_right=0x7f02011f;
+        public static final int keyanguanli_bg=0x7f020120;
+        public static final int kong=0x7f020121;
+        public static final int kuang=0x7f020122;
+        public static final int layout_bg=0x7f020123;
+        public static final int left=0x7f020124;
+        public static final int left2=0x7f020125;
+        public static final int left_selector=0x7f020126;
+        public static final int left_write=0x7f020127;
+        public static final int left_write_selector=0x7f020128;
+        public static final int line_layout_doctor_attestation_background=0x7f020129;
+        public static final int lines_click=0x7f02012a;
+        public static final int list_item_color_bg=0x7f02012b;
+        public static final int listitem_patient_medical_history_bg=0x7f02012c;
+        public static final int listitem_yuan=0x7f02012d;
+        public static final int listitem_yuan_big=0x7f02012e;
+        public static final int listview_divider_line=0x7f02012f;
+        public static final int listview_item_selector=0x7f020130;
+        public static final int listview_item_selector_bg=0x7f020131;
+        public static final int listview_pop_item=0x7f020132;
+        public static final int loading=0x7f020133;
+        public static final int loading2=0x7f020134;
+        public static final int loading3=0x7f020135;
+        public static final int loading_0=0x7f020136;
+        public static final int loading_01=0x7f020137;
+        public static final int loading_02=0x7f020138;
+        public static final int loading_03=0x7f020139;
+        public static final int loading_04=0x7f02013a;
+        public static final int loading_05=0x7f02013b;
+        public static final int loading_06=0x7f02013c;
+        public static final int loading_07=0x7f02013d;
+        public static final int loading_08=0x7f02013e;
+        public static final int loading_09=0x7f02013f;
+        public static final int loading_1=0x7f020140;
+        public static final int loading_10=0x7f020141;
+        public static final int loading_11=0x7f020142;
+        public static final int loading_12=0x7f020143;
+        public static final int loading_2=0x7f020144;
+        public static final int loading_3=0x7f020145;
+        public static final int loading_360=0x7f020146;
+        public static final int loading_4=0x7f020147;
+        public static final int loading_40=0x7f020148;
+        public static final int loading_5=0x7f020149;
+        public static final int loading_6=0x7f02014a;
+        public static final int loading_7=0x7f02014b;
+        public static final int loading_bg=0x7f02014c;
+        public static final int loading_error=0x7f02014d;
+        public static final int loading_mask=0x7f02014e;
+        public static final int loading_mydialog=0x7f02014f;
+        public static final int loading_progress=0x7f020150;
+        public static final int luyin01=0x7f020151;
+        public static final int marker=0x7f020152;
+        public static final int medical_record_little=0x7f020153;
+        public static final int menu_bg=0x7f020154;
+        public static final int menudialog_bottom2_selector=0x7f020155;
+        public static final int menudialog_bottom_selector=0x7f020156;
+        public static final int menudialog_center_selector=0x7f020157;
+        public static final int menudialog_top_selector=0x7f020158;
+        public static final int message_email=0x7f020159;
+        public static final int message_patient_add_background=0x7f02015a;
+        public static final int mm_listitem=0x7f02015b;
+        public static final int mm_listitem_grey_normal=0x7f02015c;
+        public static final int mm_listitem_normal=0x7f02015d;
+        public static final int mm_listitem_pressed=0x7f02015e;
+        public static final int mm_listitem_simple=0x7f02015f;
+        public static final int modifychemotherapy=0x7f020160;
+        public static final int msgcount=0x7f020161;
+        public static final int my_colleague_add_doctor_black_border=0x7f020162;
+        public static final int next_button=0x7f020163;
+        public static final int next_month=0x7f020164;
+        public static final int no_this_month=0x7f020165;
+        public static final int np_numberpicker_down_btn_holo_dark=0x7f020166;
+        public static final int np_numberpicker_down_btn_holo_light=0x7f020167;
+        public static final int np_numberpicker_down_disabled_focused_holo_dark=0x7f020168;
+        public static final int np_numberpicker_down_disabled_focused_holo_light=0x7f020169;
+        public static final int np_numberpicker_down_disabled_holo_dark=0x7f02016a;
+        public static final int np_numberpicker_down_disabled_holo_light=0x7f02016b;
+        public static final int np_numberpicker_down_focused_holo_dark=0x7f02016c;
+        public static final int np_numberpicker_down_focused_holo_light=0x7f02016d;
+        public static final int np_numberpicker_down_longpressed_holo_dark=0x7f02016e;
+        public static final int np_numberpicker_down_longpressed_holo_light=0x7f02016f;
+        public static final int np_numberpicker_down_normal_holo_dark=0x7f020170;
+        public static final int np_numberpicker_down_normal_holo_light=0x7f020171;
+        public static final int np_numberpicker_down_pressed_holo_dark=0x7f020172;
+        public static final int np_numberpicker_down_pressed_holo_light=0x7f020173;
+        public static final int np_numberpicker_up_btn_holo_dark=0x7f020174;
+        public static final int np_numberpicker_up_btn_holo_light=0x7f020175;
+        public static final int np_numberpicker_up_disabled_focused_holo_dark=0x7f020176;
+        public static final int np_numberpicker_up_disabled_focused_holo_light=0x7f020177;
+        public static final int np_numberpicker_up_disabled_holo_dark=0x7f020178;
+        public static final int np_numberpicker_up_disabled_holo_light=0x7f020179;
+        public static final int np_numberpicker_up_focused_holo_dark=0x7f02017a;
+        public static final int np_numberpicker_up_focused_holo_light=0x7f02017b;
+        public static final int np_numberpicker_up_longpressed_holo_dark=0x7f02017c;
+        public static final int np_numberpicker_up_longpressed_holo_light=0x7f02017d;
+        public static final int np_numberpicker_up_normal_holo_dark=0x7f02017e;
+        public static final int np_numberpicker_up_normal_holo_light=0x7f02017f;
+        public static final int np_numberpicker_up_pressed_holo_dark=0x7f020180;
+        public static final int np_numberpicker_up_pressed_holo_light=0x7f020181;
+        public static final int opened=0x7f020182;
+        public static final int page=0x7f020183;
+        public static final int page_now=0x7f020184;
+        public static final int patient1=0x7f020185;
+        public static final int patient2=0x7f020186;
+        public static final int patient_count=0x7f020187;
+        public static final int patient_group_down=0x7f020188;
+        public static final int patient_group_down_up_selector=0x7f020189;
+        public static final int patient_group_up=0x7f02018a;
+        public static final int patient_login_frist1=0x7f02018b;
+        public static final int patient_login_frist2=0x7f02018c;
+        public static final int patient_login_frist3=0x7f02018d;
+        public static final int patient_login_input_background=0x7f02018e;
+        public static final int patient_manage_state=0x7f02018f;
+        public static final int patient_phone=0x7f020190;
+        public static final int patient_search=0x7f020191;
+        public static final int patient_search1=0x7f020192;
+        public static final int patientdelete=0x7f020193;
+        public static final int patientdown=0x7f020194;
+        public static final int patientgroup_edit=0x7f020195;
+        public static final int patientgroup_selected=0x7f020196;
+        public static final int patienttab1=0x7f020197;
+        public static final int patienttab2=0x7f020198;
+        public static final int patientup=0x7f020199;
+        public static final int pattern1=0x7f02019a;
+        public static final int photo_shap=0x7f02019b;
+        public static final int pop_layout_radio=0x7f02019c;
+        public static final int previous_button=0x7f02019d;
+        public static final int previous_month=0x7f02019e;
+        public static final int progress_bg=0x7f02019f;
+        public static final int qipao=0x7f0201a0;
+        public static final int qrcode=0x7f0201a1;
+        public static final int quxiao03=0x7f0201a2;
+        public static final int radio_group_one=0x7f0201a3;
+        public static final int radio_group_there=0x7f0201a4;
+        public static final int radio_group_two=0x7f0201a5;
+        public static final int radio_icon_balck=0x7f0201a6;
+        public static final int radio_icon_white=0x7f0201a7;
+        public static final int radiobtn_bg=0x7f0201a8;
+        public static final int radiobtn_selector=0x7f0201a9;
+        public static final int redround=0x7f0201aa;
+        public static final int register_hospital=0x7f0201ab;
+        public static final int register_name=0x7f0201ac;
+        public static final int register_password=0x7f0201ad;
+        public static final int register_phone=0x7f0201ae;
+        public static final int register_verification=0x7f0201af;
+        public static final int research_state1=0x7f0201b0;
+        public static final int research_state2=0x7f0201b1;
+        public static final int research_state3=0x7f0201b2;
+        public static final int research_state4=0x7f0201b3;
+        public static final int research_state5=0x7f0201b4;
+        public static final int right=0x7f0201b5;
+        public static final int right2=0x7f0201b6;
+        public static final int right_selector=0x7f0201b7;
+        public static final int rotate_loading_360=0x7f0201b8;
+        public static final int rotate_loading_github=0x7f0201b9;
+        public static final int round_1=0x7f0201ba;
+        public static final int round_10=0x7f0201bb;
+        public static final int round_2=0x7f0201bc;
+        public static final int round_3=0x7f0201bd;
+        public static final int round_4=0x7f0201be;
+        public static final int round_5=0x7f0201bf;
+        public static final int round_6=0x7f0201c0;
+        public static final int round_7=0x7f0201c1;
+        public static final int round_8=0x7f0201c2;
+        public static final int round_9=0x7f0201c3;
+        public static final int s_search_bg=0x7f0201c4;
+        public static final int search_clear=0x7f0201c5;
+        public static final int search_clear_normal=0x7f0201c6;
+        public static final int search_clear_pressed=0x7f0201c7;
+        public static final int searcheviewbutton=0x7f0201c8;
+        public static final int searcheviewcanl=0x7f0201c9;
+        public static final int searchmainactivity=0x7f0201ca;
+        public static final int selected=0x7f0201cb;
+        public static final int selecttime_wheel_bg=0x7f0201cc;
+        public static final int selecttime_wheel_val=0x7f0201cd;
+        public static final int setting_bg_popupwindow=0x7f0201ce;
+        public static final int setting_top_background=0x7f0201cf;
+        public static final int setting_top_pull_down=0x7f0201d0;
+        public static final int shaps=0x7f0201d1;
+        public static final int share=0x7f0201d2;
+        public static final int share1=0x7f0201d3;
+        public static final int share_left=0x7f0201d4;
+        public static final int share_right=0x7f0201d5;
+        public static final int share_selector=0x7f0201d6;
+        public static final int snow=0x7f0201d7;
+        public static final int spinner_title_bg=0x7f0201d8;
+        public static final int start_stop=0x7f0201d9;
+        public static final int stroke_dialog=0x7f0201da;
+        public static final int stroke_dialog_down=0x7f0201db;
+        public static final int stroke_dialog_down_left=0x7f0201dc;
+        public static final int stroke_dialog_down_right=0x7f0201dd;
+        public static final int subscribe_little=0x7f0201de;
+        public static final int tab1=0x7f0201df;
+        public static final int tab1_1=0x7f0201e0;
+        public static final int tab1_2=0x7f0201e1;
+        public static final int tab2=0x7f0201e2;
+        public static final int tab2_1=0x7f0201e3;
+        public static final int tab2_2=0x7f0201e4;
+        public static final int tab3=0x7f0201e5;
+        public static final int tab3_1=0x7f0201e6;
+        public static final int tab3_2=0x7f0201e7;
+        public static final int tab4=0x7f0201e8;
+        public static final int tab4_1=0x7f0201e9;
+        public static final int tab4_2=0x7f0201ea;
+        public static final int tab_background=0x7f0201eb;
+        public static final int tab_item=0x7f0201ec;
+        public static final int tab_item_press=0x7f0201ed;
+        public static final int tabhost_lines=0x7f0201ee;
+        public static final int test_doctor_quickmark_develop=0x7f0201ef;
+        public static final int test_doctor_quickmark_test=0x7f0201f0;
+        public static final int tick=0x7f0201f1;
+        public static final int time_line_shadow=0x7f0201f2;
+        public static final int tingzhi=0x7f0201f3;
+        public static final int titlejianbian=0x7f0201f4;
+        public static final int titlejianbian_left_selector=0x7f0201f5;
+        public static final int titlejianbian_pressed=0x7f0201f6;
+        public static final int titlejianbian_selector=0x7f0201f7;
+        public static final int today_calender_bg=0x7f0201f8;
+        public static final int toggle_me=0x7f0201f9;
+        public static final int tongyong_ed=0x7f0201fa;
+        public static final int tongyong_edittext=0x7f0201fb;
+        public static final int top_bar=0x7f0201fc;
+        public static final int touming=0x7f0201fd;
+        public static final int touming_elector=0x7f0201fe;
+        public static final int triangle=0x7f0201ff;
+        public static final int trues=0x7f020200;
+        public static final int tweet_confirm_dialog_load=0x7f020201;
+        public static final int tweet_custom_loading=0x7f020202;
+        public static final int update_shouqi=0x7f020203;
+        public static final int user_add_top_bg=0x7f020204;
+        public static final int v2_gallery_contacts_dialog_background=0x7f020205;
+        public static final int v2_sortlistview_sidebar_background=0x7f020206;
+        public static final int voice_rcd_btn_pressed=0x7f020207;
+        public static final int week=0x7f020208;
+        public static final int week1=0x7f020209;
+        public static final int week2=0x7f02020a;
+        public static final int week_headbg=0x7f02020b;
+        public static final int wheel_bg=0x7f02020c;
+        public static final int wheel_val=0x7f02020d;
+        public static final int wifi01=0x7f02020e;
+        public static final int wifi02=0x7f02020f;
+        public static final int work_manager_state=0x7f020210;
+        public static final int xialakuang=0x7f020211;
+        public static final int xialakuang01=0x7f020212;
+        public static final int xialakuang01_02=0x7f020213;
+        public static final int xialatubiao=0x7f020214;
+        public static final int xiugai004=0x7f020215;
+        public static final int xlistview_arrow=0x7f020216;
+        public static final int xsearch_loading=0x7f020217;
+        public static final int xsearch_msg_pull_arrow_down=0x7f020218;
+        public static final int zhaoxianji=0x7f020219;
     }
     public static final class id {
-        public static final int FrameLayout1=0x7f0a0054;
-        public static final int action_bar_btn_left=0x7f0a0000;
-        public static final int action_bar_btn_right=0x7f0a0002;
-        public static final int action_bar_title=0x7f0a0001;
-        public static final int action_settings=0x7f0a0069;
-        public static final int activity_mypatients_ll_patientgroup=0x7f0a0019;
-        public static final int activity_mypatients_main1_addPatient=0x7f0a001c;
-        public static final int activity_mypatients_main1_iv_group=0x7f0a001b;
-        public static final int activity_mypatients_main1_patientgroup=0x7f0a001a;
-        public static final int add_research=0x7f0a001e;
-        public static final int big_img=0x7f0a0053;
-        public static final int btn_crach_start=0x7f0a0006;
-        public static final int btn_left=0x7f0a0038;
-        public static final int btn_login=0x7f0a002a;
-        public static final int btn_register=0x7f0a002b;
-        public static final int btn_right=0x7f0a003c;
-        public static final int btn_tiyanmoshi_click=0x7f0a002c;
-        public static final int cancel=0x7f0a0045;
-        public static final int category_button=0x7f0a002f;
-        public static final int centre_lin_layout=0x7f0a0039;
-        public static final int confirm=0x7f0a0047;
-        public static final int container=0x7f0a0032;
-        public static final int crash_show_tv_info=0x7f0a0004;
-        public static final int db_test_btn=0x7f0a003f;
-        public static final int dialogLayout=0x7f0a0049;
-        public static final int divider=0x7f0a0046;
-        public static final int divider1=0x7f0a0043;
-        public static final int doctorLoginForgetPasswordTextView=0x7f0a000c;
-        public static final int doctorLoginLoginButton=0x7f0a000d;
-        public static final int doctorLoginLoginCheckBox=0x7f0a000a;
-        public static final int doctorLoginLoginflag=0x7f0a000b;
-        public static final int doctorLoginNameEditText=0x7f0a0008;
-        public static final int doctorLoginPasswordEditText=0x7f0a0009;
-        public static final int doctorLoginRegestButton=0x7f0a000e;
-        public static final int doctor_patient_medical_record_returnTextView=0x7f0a0003;
-        public static final int download_addr_edit=0x7f0a0050;
-        public static final int download_btn=0x7f0a0051;
-        public static final int download_label=0x7f0a004a;
-        public static final int download_list=0x7f0a004f;
-        public static final int download_page_btn=0x7f0a0052;
-        public static final int download_pb=0x7f0a004c;
-        public static final int download_remove_btn=0x7f0a004e;
-        public static final int download_state=0x7f0a004b;
-        public static final int download_stop_btn=0x7f0a004d;
-        public static final int four_button=0x7f0a0031;
-        public static final int highlightImageView1=0x7f0a0023;
-        public static final int imageView1=0x7f0a0005;
-        public static final int imageView2=0x7f0a0027;
-        public static final int imageView3=0x7f0a0028;
-        public static final int imageView_view_pager=0x7f0a0026;
-        public static final int img_item=0x7f0a0034;
-        public static final int img_list=0x7f0a0033;
-        public static final int img_pb=0x7f0a0035;
-        public static final int iv_icon=0x7f0a005d;
-        public static final int iv_progress=0x7f0a003e;
-        public static final int jtv_patient_name=0x7f0a005c;
-        public static final int left_lin_layout=0x7f0a0037;
-        public static final int linearLayout1=0x7f0a0029;
-        public static final int linear_message_email=0x7f0a0017;
-        public static final int linearlayout1_login_doctor_guide=0x7f0a0025;
-        public static final int linout_title_bar=0x7f0a0036;
-        public static final int ly_content=0x7f0a003d;
-        public static final int main_radio=0x7f0a002d;
-        public static final int more_button=0x7f0a0030;
-        public static final int myselfmain_user_feedback=0x7f0a0014;
-        public static final int myselfmainabouttx=0x7f0a0016;
-        public static final int myselfmaincontactservice=0x7f0a0015;
-        public static final int myselfmainnameTextView=0x7f0a0011;
-        public static final int myselfmainphoneTextView=0x7f0a0012;
-        public static final int myselfmainphoto=0x7f0a000f;
-        public static final int myselfmainphotoImageView=0x7f0a0010;
-        public static final int myselfmainsettings=0x7f0a0013;
-        public static final int ok=0x7f0a0044;
-        public static final int patient_list_view_img=0x7f0a0059;
-        public static final int patient_list_view_tv=0x7f0a005a;
-        public static final int patient_photo=0x7f0a005b;
-        public static final int patient_tab_list_view=0x7f0a001d;
-        public static final int point=0x7f0a0041;
-        public static final int realtabcontent=0x7f0a0055;
-        public static final int record_button=0x7f0a002e;
-        public static final int researchs_ll_data=0x7f0a001f;
-        public static final int researchs_lv_data=0x7f0a0020;
-        public static final int result_txt=0x7f0a0040;
-        public static final int right_lin_layout=0x7f0a003b;
-        public static final int tabcontent=0x7f0a0058;
-        public static final int tabhost=0x7f0a0056;
-        public static final int tabs=0x7f0a0057;
-        public static final int text_doctor_login_back=0x7f0a0007;
-        public static final int title=0x7f0a0048;
-        public static final int toast=0x7f0a0042;
-        public static final int toast_text=0x7f0a005f;
-        public static final int tv_icon=0x7f0a005e;
-        public static final int tv_mass_texting_message=0x7f0a0018;
-        public static final int tv_title=0x7f0a003a;
-        public static final int viewPager_login_guide_frist=0x7f0a0024;
-        public static final int work_management_title_left=0x7f0a0021;
-        public static final int work_management_title_right=0x7f0a0022;
-        public static final int xlistview_footer_content=0x7f0a0060;
-        public static final int xlistview_footer_hint_textview=0x7f0a0062;
-        public static final int xlistview_footer_progressbar=0x7f0a0061;
-        public static final int xlistview_header_arrow=0x7f0a0067;
-        public static final int xlistview_header_content=0x7f0a0063;
-        public static final int xlistview_header_hint_textview=0x7f0a0065;
-        public static final int xlistview_header_progressbar=0x7f0a0068;
-        public static final int xlistview_header_text=0x7f0a0064;
-        public static final int xlistview_header_time=0x7f0a0066;
+        public static final int FrameLayout1=0x7f050060;
+        public static final int action_bar_btn_left=0x7f05000c;
+        public static final int action_bar_btn_right=0x7f05000e;
+        public static final int action_bar_title=0x7f05000d;
+        public static final int action_settings=0x7f05007c;
+        public static final int activity_mypatients_ll_patientgroup=0x7f050025;
+        public static final int activity_mypatients_main1_addPatient=0x7f050028;
+        public static final int activity_mypatients_main1_iv_group=0x7f050027;
+        public static final int activity_mypatients_main1_patientgroup=0x7f050026;
+        public static final int add_research=0x7f05002a;
+        public static final int big_img=0x7f05005f;
+        public static final int both=0x7f050003;
+        public static final int btn_crach_start=0x7f050012;
+        public static final int btn_left=0x7f050044;
+        public static final int btn_login=0x7f050036;
+        public static final int btn_register=0x7f050037;
+        public static final int btn_right=0x7f050048;
+        public static final int btn_tiyanmoshi_click=0x7f050038;
+        public static final int cancel=0x7f050051;
+        public static final int category_button=0x7f05003b;
+        public static final int centre_lin_layout=0x7f050045;
+        public static final int confirm=0x7f050053;
+        public static final int container=0x7f05003e;
+        public static final int crash_show_tv_info=0x7f050010;
+        public static final int db_test_btn=0x7f05004b;
+        public static final int dialogLayout=0x7f050055;
+        public static final int disabled=0x7f050000;
+        public static final int divider=0x7f050052;
+        public static final int divider1=0x7f05004f;
+        public static final int doctorLoginForgetPasswordTextView=0x7f050018;
+        public static final int doctorLoginLoginButton=0x7f050019;
+        public static final int doctorLoginLoginCheckBox=0x7f050016;
+        public static final int doctorLoginLoginflag=0x7f050017;
+        public static final int doctorLoginNameEditText=0x7f050014;
+        public static final int doctorLoginPasswordEditText=0x7f050015;
+        public static final int doctorLoginRegestButton=0x7f05001a;
+        public static final int doctor_patient_medical_record_returnTextView=0x7f05000f;
+        public static final int download_addr_edit=0x7f05005c;
+        public static final int download_btn=0x7f05005d;
+        public static final int download_label=0x7f050056;
+        public static final int download_list=0x7f05005b;
+        public static final int download_page_btn=0x7f05005e;
+        public static final int download_pb=0x7f050058;
+        public static final int download_remove_btn=0x7f05005a;
+        public static final int download_state=0x7f050057;
+        public static final int download_stop_btn=0x7f050059;
+        public static final int fl_inner=0x7f050069;
+        public static final int flip=0x7f050008;
+        public static final int four_button=0x7f05003d;
+        public static final int gridview=0x7f050009;
+        public static final int highlightImageView1=0x7f05002f;
+        public static final int imageView1=0x7f050011;
+        public static final int imageView2=0x7f050033;
+        public static final int imageView3=0x7f050034;
+        public static final int imageView_view_pager=0x7f050032;
+        public static final int img_item=0x7f050040;
+        public static final int img_list=0x7f05003f;
+        public static final int img_pb=0x7f050041;
+        public static final int iv_icon=0x7f05006e;
+        public static final int iv_progress=0x7f05004a;
+        public static final int jtv_patient_name=0x7f050068;
+        public static final int left_lin_layout=0x7f050043;
+        public static final int linearLayout1=0x7f050035;
+        public static final int linear_message_email=0x7f050023;
+        public static final int linearlayout1_login_doctor_guide=0x7f050031;
+        public static final int linout_title_bar=0x7f050042;
+        public static final int ly_content=0x7f050049;
+        public static final int main_radio=0x7f050039;
+        public static final int manualOnly=0x7f050004;
+        public static final int more_button=0x7f05003c;
+        public static final int myselfmain_user_feedback=0x7f050020;
+        public static final int myselfmainabouttx=0x7f050022;
+        public static final int myselfmaincontactservice=0x7f050021;
+        public static final int myselfmainnameTextView=0x7f05001d;
+        public static final int myselfmainphoneTextView=0x7f05001e;
+        public static final int myselfmainphoto=0x7f05001b;
+        public static final int myselfmainphotoImageView=0x7f05001c;
+        public static final int myselfmainsettings=0x7f05001f;
+        public static final int ok=0x7f050050;
+        public static final int patient_list_view_img=0x7f050065;
+        public static final int patient_list_view_tv=0x7f050066;
+        public static final int patient_photo=0x7f050067;
+        public static final int patient_tab_list_view=0x7f050029;
+        public static final int point=0x7f05004d;
+        public static final int pullDownFromTop=0x7f050005;
+        public static final int pullFromEnd=0x7f050002;
+        public static final int pullFromStart=0x7f050001;
+        public static final int pullUpFromBottom=0x7f050006;
+        public static final int pull_to_refresh_image=0x7f05006a;
+        public static final int pull_to_refresh_progress=0x7f05006b;
+        public static final int pull_to_refresh_sub_text=0x7f05006d;
+        public static final int pull_to_refresh_text=0x7f05006c;
+        public static final int realtabcontent=0x7f050061;
+        public static final int record_button=0x7f05003a;
+        public static final int research_name=0x7f050071;
+        public static final int research_patient_count=0x7f050072;
+        public static final int researchs_ll_data=0x7f05002b;
+        public static final int researchs_lv_data=0x7f05002c;
+        public static final int result_txt=0x7f05004c;
+        public static final int right_lin_layout=0x7f050047;
+        public static final int rotate=0x7f050007;
+        public static final int scrollview=0x7f05000b;
+        public static final int tabcontent=0x7f050064;
+        public static final int tabhost=0x7f050062;
+        public static final int tabs=0x7f050063;
+        public static final int text_doctor_login_back=0x7f050013;
+        public static final int title=0x7f050054;
+        public static final int toast=0x7f05004e;
+        public static final int toast_text=0x7f050070;
+        public static final int tv_icon=0x7f05006f;
+        public static final int tv_mass_texting_message=0x7f050024;
+        public static final int tv_title=0x7f050046;
+        public static final int viewPager_login_guide_frist=0x7f050030;
+        public static final int webview=0x7f05000a;
+        public static final int work_management_title_left=0x7f05002d;
+        public static final int work_management_title_right=0x7f05002e;
+        public static final int xlistview_footer_content=0x7f050073;
+        public static final int xlistview_footer_hint_textview=0x7f050075;
+        public static final int xlistview_footer_progressbar=0x7f050074;
+        public static final int xlistview_header_arrow=0x7f05007a;
+        public static final int xlistview_header_content=0x7f050076;
+        public static final int xlistview_header_hint_textview=0x7f050078;
+        public static final int xlistview_header_progressbar=0x7f05007b;
+        public static final int xlistview_header_text=0x7f050077;
+        public static final int xlistview_header_time=0x7f050079;
     }
     public static final class layout {
         public static final int action_bar_btn_text_color=0x7f030000;
@@ -1167,54 +1338,66 @@ containing a value of this type.
         public static final int main=0x7f03001a;
         public static final int patient_listview_item=0x7f03001b;
         public static final int patient_tab_list=0x7f03001c;
-        public static final int radio_group_four=0x7f03001d;
-        public static final int tab_bottom_nav=0x7f03001e;
-        public static final int taost_view=0x7f03001f;
-        public static final int xlistview_footer=0x7f030020;
-        public static final int xlistview_header=0x7f030021;
+        public static final int pull_to_refresh_header_horizontal=0x7f03001d;
+        public static final int pull_to_refresh_header_vertical=0x7f03001e;
+        public static final int radio_group_four=0x7f03001f;
+        public static final int tab_bottom_nav=0x7f030020;
+        public static final int taost_view=0x7f030021;
+        public static final int xlist_view_reseach=0x7f030022;
+        public static final int xlistview_footer=0x7f030023;
+        public static final int xlistview_header=0x7f030024;
     }
     public static final class menu {
-        public static final int doctor_info=0x7f090000;
-        public static final int doctor_login=0x7f090001;
-        public static final int group_one=0x7f090002;
-        public static final int group_there=0x7f090003;
-        public static final int group_two=0x7f090004;
-        public static final int loading_frist=0x7f090005;
-        public static final int main_group=0x7f090006;
+        public static final int doctor_info=0x7f0a0000;
+        public static final int doctor_login=0x7f0a0001;
+        public static final int group_one=0x7f0a0002;
+        public static final int group_there=0x7f0a0003;
+        public static final int group_two=0x7f0a0004;
+        public static final int loading_frist=0x7f0a0005;
+        public static final int main_group=0x7f0a0006;
     }
     public static final class string {
-        public static final int action_settings=0x7f080009;
-        public static final int app_name=0x7f080000;
-        public static final int cancel=0x7f08000c;
-        public static final int confirm=0x7f08000d;
-        public static final int download=0x7f080002;
-        public static final int download_label=0x7f080001;
-        public static final int hello_world=0x7f08000a;
-        public static final int pointMessage=0x7f08000b;
-        public static final int remove=0x7f080006;
-        public static final int resume=0x7f080004;
-        public static final int retry=0x7f080005;
-        public static final int stop=0x7f080003;
-        public static final int test=0x7f080007;
-        public static final int title_activity_doctor_info=0x7f080018;
-        public static final int title_activity_doctor_login=0x7f080019;
-        public static final int title_activity_group_one=0x7f080015;
-        public static final int title_activity_group_there=0x7f080017;
-        public static final int title_activity_group_two=0x7f080016;
-        public static final int title_activity_loading_frist=0x7f080008;
-        public static final int title_activity_main_group=0x7f080014;
-        public static final int xlistview_footer_hint_normal=0x7f080012;
-        public static final int xlistview_footer_hint_ready=0x7f080013;
-        public static final int xlistview_header_hint_loading=0x7f080010;
+        public static final int action_settings=0x7f07000f;
+        public static final int app_name=0x7f070006;
+        public static final int cancel=0x7f070012;
+        public static final int confirm=0x7f070013;
+        public static final int download=0x7f070008;
+        public static final int download_label=0x7f070007;
+        public static final int hello_world=0x7f070010;
+        public static final int pointMessage=0x7f070011;
+        /**  Just use standard Pull Down String when pulling up. These can be set for languages which require it 
+ Just use standard Pull Down String when pulling up. These can be set for languages which require it 
+         */
+        public static final int pull_to_refresh_from_bottom_pull_label=0x7f070003;
+        public static final int pull_to_refresh_from_bottom_refreshing_label=0x7f070005;
+        public static final int pull_to_refresh_from_bottom_release_label=0x7f070004;
+        public static final int pull_to_refresh_pull_label=0x7f070000;
+        public static final int pull_to_refresh_refreshing_label=0x7f070002;
+        public static final int pull_to_refresh_release_label=0x7f070001;
+        public static final int remove=0x7f07000c;
+        public static final int resume=0x7f07000a;
+        public static final int retry=0x7f07000b;
+        public static final int stop=0x7f070009;
+        public static final int test=0x7f07000d;
+        public static final int title_activity_doctor_info=0x7f07001e;
+        public static final int title_activity_doctor_login=0x7f07001f;
+        public static final int title_activity_group_one=0x7f07001b;
+        public static final int title_activity_group_there=0x7f07001d;
+        public static final int title_activity_group_two=0x7f07001c;
+        public static final int title_activity_loading_frist=0x7f07000e;
+        public static final int title_activity_main_group=0x7f07001a;
+        public static final int xlistview_footer_hint_normal=0x7f070018;
+        public static final int xlistview_footer_hint_ready=0x7f070019;
+        public static final int xlistview_header_hint_loading=0x7f070016;
         /**  XListView 
          */
-        public static final int xlistview_header_hint_normal=0x7f08000e;
-        public static final int xlistview_header_hint_ready=0x7f08000f;
-        public static final int xlistview_header_last_time=0x7f080011;
+        public static final int xlistview_header_hint_normal=0x7f070014;
+        public static final int xlistview_header_hint_ready=0x7f070015;
+        public static final int xlistview_header_last_time=0x7f070017;
     }
     public static final class style {
-        public static final int ActivityTheme=0x7f070009;
-        public static final int AnimationPreview=0x7f070012;
+        public static final int ActivityTheme=0x7f090009;
+        public static final int AnimationPreview=0x7f090012;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -1227,44 +1410,44 @@ containing a value of this type.
 
         
          */
-        public static final int AppBaseTheme=0x7f070006;
+        public static final int AppBaseTheme=0x7f090006;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070007;
+        public static final int AppTheme=0x7f090007;
         /**  Blue Flor Theme 
          */
-        public static final int BlueFlor=0x7f070013;
-        public static final int BlueFlor_ActionBar=0x7f070014;
-        public static final int BlueFlor_ActionBar_BtnLeft=0x7f070016;
-        public static final int BlueFlor_ActionBar_BtnRight=0x7f070017;
-        public static final int BlueFlor_ActionBar_BtnText=0x7f070018;
-        public static final int BlueFlor_ActionBar_ContainerLeft=0x7f07001a;
-        public static final int BlueFlor_ActionBar_ContainerRight=0x7f07001b;
-        public static final int BlueFlor_ActionBar_Icon=0x7f070019;
-        public static final int BlueFlor_ActionBar_Title=0x7f070015;
+        public static final int BlueFlor=0x7f090013;
+        public static final int BlueFlor_ActionBar=0x7f090014;
+        public static final int BlueFlor_ActionBar_BtnLeft=0x7f090016;
+        public static final int BlueFlor_ActionBar_BtnRight=0x7f090017;
+        public static final int BlueFlor_ActionBar_BtnText=0x7f090018;
+        public static final int BlueFlor_ActionBar_ContainerLeft=0x7f09001a;
+        public static final int BlueFlor_ActionBar_ContainerRight=0x7f09001b;
+        public static final int BlueFlor_ActionBar_Icon=0x7f090019;
+        public static final int BlueFlor_ActionBar_Title=0x7f090015;
         /**  Dialog样式 
          */
-        public static final int DialogStyle=0x7f070001;
-        public static final int IMTheme_Basic=0x7f07001d;
-        public static final int IMTheme_Transparent=0x7f07001e;
-        public static final int MyCheckBox=0x7f07001c;
-        public static final int WheelViewDialog=0x7f07000a;
-        public static final int actionbar_def_style=0x7f070008;
+        public static final int DialogStyle=0x7f090001;
+        public static final int IMTheme_Basic=0x7f09001d;
+        public static final int IMTheme_Transparent=0x7f09001e;
+        public static final int MyCheckBox=0x7f09001c;
+        public static final int WheelViewDialog=0x7f09000a;
+        public static final int actionbar_def_style=0x7f090008;
         /** 模糊
          */
-        public static final int dialog=0x7f07000f;
-        public static final int dialogAnim=0x7f070002;
-        public static final int divider_horizontal=0x7f070003;
-        public static final int divider_vertical=0x7f070004;
-        public static final int item_WheelView=0x7f07000b;
-        public static final int loading_small=0x7f07000c;
-        public static final int progress_dialog=0x7f070005;
-        public static final int radioButton=0x7f070010;
-        public static final int title_back_textview=0x7f070000;
-        public static final int tweet_largeCustomProgressBar=0x7f07000e;
-        public static final int weekName=0x7f070011;
-        public static final int widget_listview=0x7f07000d;
+        public static final int dialog=0x7f09000f;
+        public static final int dialogAnim=0x7f090002;
+        public static final int divider_horizontal=0x7f090003;
+        public static final int divider_vertical=0x7f090004;
+        public static final int item_WheelView=0x7f09000b;
+        public static final int loading_small=0x7f09000c;
+        public static final int progress_dialog=0x7f090005;
+        public static final int radioButton=0x7f090010;
+        public static final int title_back_textview=0x7f090000;
+        public static final int tweet_largeCustomProgressBar=0x7f09000e;
+        public static final int weekName=0x7f090011;
+        public static final int widget_listview=0x7f09000d;
     }
     public static final class styleable {
         /** Attributes that can be used with a FButton.
@@ -1286,8 +1469,8 @@ containing a value of this type.
            @see #FButton_shadowHeight
          */
         public static final int[] FButton = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004
+            0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016,
+            0x7f010017
         };
         /**
           <p>This symbol is the offset where the {@link com.lidroid.xutils.sample.R.attr#buttonColor}
@@ -1378,7 +1561,7 @@ containing a value of this type.
            @see #PieProgress_foregroundColor
          */
         public static final int[] PieProgress = {
-            0x7f010011, 0x7f010012
+            0x7f010024, 0x7f010025
         };
         /**
           <p>This symbol is the offset where the {@link com.lidroid.xutils.sample.R.attr#backgroundColor}
@@ -1443,9 +1626,9 @@ containing a value of this type.
            @see #ProgressWheel_textSize
          */
         public static final int[] ProgressWheel = {
-            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
-            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
-            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
+            0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f,
+            0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023
         };
         /**
           <p>This symbol is the offset where the {@link com.lidroid.xutils.sample.R.attr#barColor}
@@ -1631,5 +1814,325 @@ containing a value of this type.
           @attr name com.lidroid.xutils.sample:textSize
         */
         public static final int ProgressWheel_textSize = 2;
+        /** Attributes that can be used with a PullToRefresh.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrAdapterViewBackground com.lidroid.xutils.sample:ptrAdapterViewBackground}</code></td><td> BELOW HERE ARE DEPRECEATED.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrAnimationStyle com.lidroid.xutils.sample:ptrAnimationStyle}</code></td><td> Style of Animation should be used displayed when pulling.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawable com.lidroid.xutils.sample:ptrDrawable}</code></td><td> Drawable to use as Loading Indicator.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableBottom com.lidroid.xutils.sample:ptrDrawableBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableEnd com.lidroid.xutils.sample:ptrDrawableEnd}</code></td><td> Drawable to use as Loading Indicator in the Footer View.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableStart com.lidroid.xutils.sample:ptrDrawableStart}</code></td><td> Drawable to use as Loading Indicator in the Header View.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrDrawableTop com.lidroid.xutils.sample:ptrDrawableTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderBackground com.lidroid.xutils.sample:ptrHeaderBackground}</code></td><td> A drawable to use as the background of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderSubTextColor com.lidroid.xutils.sample:ptrHeaderSubTextColor}</code></td><td> Text Color of the Header and Footer Loading Views Sub Header </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextAppearance com.lidroid.xutils.sample:ptrHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrHeaderTextColor com.lidroid.xutils.sample:ptrHeaderTextColor}</code></td><td> Text Color of the Header and Footer Loading Views </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrListViewExtrasEnabled com.lidroid.xutils.sample:ptrListViewExtrasEnabled}</code></td><td>
+        	Whether PullToRefreshListView has it's extras enabled.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrMode com.lidroid.xutils.sample:ptrMode}</code></td><td> Mode of Pull-to-Refresh that should be used </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrOverScroll com.lidroid.xutils.sample:ptrOverScroll}</code></td><td> Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrRefreshableViewBackground com.lidroid.xutils.sample:ptrRefreshableViewBackground}</code></td><td> A drawable to use as the background of the Refreshable View </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrRotateDrawableWhilePulling com.lidroid.xutils.sample:ptrRotateDrawableWhilePulling}</code></td><td>
+        	Whether the Drawable should be continually rotated as you pull.</td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrScrollingWhileRefreshingEnabled com.lidroid.xutils.sample:ptrScrollingWhileRefreshingEnabled}</code></td><td> Whether the user can scroll while the View is Refreshing </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrShowIndicator com.lidroid.xutils.sample:ptrShowIndicator}</code></td><td> Whether the Indicator overlay(s) should be used </td></tr>
+           <tr><td><code>{@link #PullToRefresh_ptrSubHeaderTextAppearance com.lidroid.xutils.sample:ptrSubHeaderTextAppearance}</code></td><td> Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header </td></tr>
+           </table>
+           @see #PullToRefresh_ptrAdapterViewBackground
+           @see #PullToRefresh_ptrAnimationStyle
+           @see #PullToRefresh_ptrDrawable
+           @see #PullToRefresh_ptrDrawableBottom
+           @see #PullToRefresh_ptrDrawableEnd
+           @see #PullToRefresh_ptrDrawableStart
+           @see #PullToRefresh_ptrDrawableTop
+           @see #PullToRefresh_ptrHeaderBackground
+           @see #PullToRefresh_ptrHeaderSubTextColor
+           @see #PullToRefresh_ptrHeaderTextAppearance
+           @see #PullToRefresh_ptrHeaderTextColor
+           @see #PullToRefresh_ptrListViewExtrasEnabled
+           @see #PullToRefresh_ptrMode
+           @see #PullToRefresh_ptrOverScroll
+           @see #PullToRefresh_ptrRefreshableViewBackground
+           @see #PullToRefresh_ptrRotateDrawableWhilePulling
+           @see #PullToRefresh_ptrScrollingWhileRefreshingEnabled
+           @see #PullToRefresh_ptrShowIndicator
+           @see #PullToRefresh_ptrSubHeaderTextAppearance
+         */
+        public static final int[] PullToRefresh = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f,
+            0x7f010010, 0x7f010011, 0x7f010012
+        };
+        /**
+          <p>
+          @attr description
+           BELOW HERE ARE DEPRECEATED. DO NOT USE. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrAdapterViewBackground
+        */
+        public static final int PullToRefresh_ptrAdapterViewBackground = 16;
+        /**
+          <p>
+          @attr description
+           Style of Animation should be used displayed when pulling. 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>rotate</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>flip</code></td><td>0x1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrAnimationStyle
+        */
+        public static final int PullToRefresh_ptrAnimationStyle = 12;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator. Changes both Header and Footer. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrDrawable
+        */
+        public static final int PullToRefresh_ptrDrawable = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.lidroid.xutils.sample.R.attr#ptrDrawableBottom}
+          attribute's value can be found in the {@link #PullToRefresh} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lidroid.xutils.sample:ptrDrawableBottom
+        */
+        public static final int PullToRefresh_ptrDrawableBottom = 18;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrDrawableEnd
+        */
+        public static final int PullToRefresh_ptrDrawableEnd = 8;
+        /**
+          <p>
+          @attr description
+           Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrDrawableStart
+        */
+        public static final int PullToRefresh_ptrDrawableStart = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.lidroid.xutils.sample.R.attr#ptrDrawableTop}
+          attribute's value can be found in the {@link #PullToRefresh} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.lidroid.xutils.sample:ptrDrawableTop
+        */
+        public static final int PullToRefresh_ptrDrawableTop = 17;
+        /**
+          <p>
+          @attr description
+           A drawable to use as the background of the Header and Footer Loading Views 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrHeaderBackground
+        */
+        public static final int PullToRefresh_ptrHeaderBackground = 1;
+        /**
+          <p>
+          @attr description
+           Text Color of the Header and Footer Loading Views Sub Header 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrHeaderSubTextColor
+        */
+        public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
+        /**
+          <p>
+          @attr description
+           Base text color, typeface, size, and style for Header and Footer Loading Views 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrHeaderTextAppearance
+        */
+        public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
+        /**
+          <p>
+          @attr description
+           Text Color of the Header and Footer Loading Views 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrHeaderTextColor
+        */
+        public static final int PullToRefresh_ptrHeaderTextColor = 2;
+        /**
+          <p>
+          @attr description
+          
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be 
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrListViewExtrasEnabled
+        */
+        public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
+        /**
+          <p>
+          @attr description
+           Mode of Pull-to-Refresh that should be used 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>disabled</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>pullFromStart</code></td><td>0x1</td><td></td></tr>
+<tr><td><code>pullFromEnd</code></td><td>0x2</td><td></td></tr>
+<tr><td><code>both</code></td><td>0x3</td><td></td></tr>
+<tr><td><code>manualOnly</code></td><td>0x4</td><td></td></tr>
+<tr><td><code>pullDownFromTop</code></td><td>0x1</td><td> These last two are depreacted </td></tr>
+<tr><td><code>pullUpFromBottom</code></td><td>0x2</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrMode
+        */
+        public static final int PullToRefresh_ptrMode = 4;
+        /**
+          <p>
+          @attr description
+           Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrOverScroll
+        */
+        public static final int PullToRefresh_ptrOverScroll = 9;
+        /**
+          <p>
+          @attr description
+           A drawable to use as the background of the Refreshable View 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrRefreshableViewBackground
+        */
+        public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
+        /**
+          <p>
+          @attr description
+          
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrRotateDrawableWhilePulling
+        */
+        public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
+        /**
+          <p>
+          @attr description
+           Whether the user can scroll while the View is Refreshing 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrScrollingWhileRefreshingEnabled
+        */
+        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
+        /**
+          <p>
+          @attr description
+           Whether the Indicator overlay(s) should be used 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrShowIndicator
+        */
+        public static final int PullToRefresh_ptrShowIndicator = 5;
+        /**
+          <p>
+          @attr description
+           Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.lidroid.xutils.sample:ptrSubHeaderTextAppearance
+        */
+        public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
     };
 }

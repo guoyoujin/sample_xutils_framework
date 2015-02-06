@@ -6,6 +6,8 @@
 
 # view res/layout/patient_listview_item.xml #generated:14
 # view res/layout/patient_tab_list.xml #generated:28
+# view res/layout/xlist_view_reseach.xml #generated:12
+# view res/layout/xlist_view_reseach.xml #generated:20
 -keep class com.lidroid.xutils.custom.textview.JustifyTextView { <init>(...); }
 
 # view res/layout/activity_doctor_login.xml #generated:150
@@ -26,7 +28,7 @@
 
 # view res/layout/activity_group_one.xml #generated:92
 # view res/layout/activity_group_there.xml #generated:41
--keep class com.lidroid.xutils.custom.view.XListView { <init>(...); }
+-keep class com.lidroid.xutils.list.XListView { <init>(...); }
 
 # view AndroidManifest.xml #generated:28
 -keep class com.lidroid.xutils.sample.CrashShowActivity { <init>(...); }

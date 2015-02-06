@@ -38,13 +38,13 @@
         android:layout_marginTop="@dimen/unite_title_one_height"
         android:visibility="gone" >
 		<include layout="@layout/lines"/>
-        <com.lidroid.xutils.custom.view.XListView
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
             android:id="@+id/researchs_lv_data"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="@color/unit_lines_color"
             android:dividerHeight="@dimen/unit_lines_height" >
-        </com.lidroid.xutils.custom.view.XListView>
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
         <include layout="@layout/lines"/>
     </LinearLayout>
     </LinearLayout>

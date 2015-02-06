@@ -89,7 +89,7 @@
                 android:textSize="@dimen/action_bar_btn_text_size" />
         </LinearLayout>
     </LinearLayout>
-    <com.lidroid.xutils.custom.view.XListView 
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
 	   android:id="@+id/patient_tab_list_view"
 	   android:layout_width="fill_parent"
 	   android:layout_height="fill_parent"      

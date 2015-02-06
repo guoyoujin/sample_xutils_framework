@@ -69,10 +69,9 @@ public class BaseActivity extends Activity {
         }
         
         public void showToast(String text){
-        	if(toast==null){
             	toast=new ToastView(getApplicationContext(), text);
             	toast.setDuration(1000);
-            }
+            	toast.show();
         }
 
         /***

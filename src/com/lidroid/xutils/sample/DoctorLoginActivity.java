@@ -29,19 +29,12 @@ import com.lidroid.xutils.util.LogUtils;
 import com.lidroid.xutils.util.StringUtils;
 
 public class DoctorLoginActivity extends BaseActivity {
-	@SuppressWarnings("unused")
 	private EditTextWithDel doctorLoginNameEditText=null;
-	@SuppressWarnings("unused")
 	private EditTextWithDel doctorLoginPasswordEditText=null;
-	@SuppressWarnings("unused")
 	private TextView doctorLoginForgetPasswordTextView=null;
-	@SuppressWarnings("unused")
 	private Button doctorLoginLoginButton=null;
-	@SuppressWarnings("unused")
 	private TextView text_doctor_login_back=null;
-	@SuppressWarnings("unused")
 	private SharedPreferences sp_login=null;
-	@SuppressWarnings("unused")
 	private Editor edt=null;
 	private String user_name="";
 	private String password="";
@@ -81,7 +74,6 @@ public class DoctorLoginActivity extends BaseActivity {
 		doctorLoginLoginButton.setOnClickListener(new OnClickListener() {		
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
 				login_in();
 			}
 		});
@@ -101,6 +93,8 @@ public class DoctorLoginActivity extends BaseActivity {
 		RequestParams params=new RequestParams();
 		params.addBodyParameter("username", username);
 		params.addBodyParameter("password", password);
+		params.addBodyParameter("version",AppContext.version);
+		params.addBodyParameter("sys",AppContext.sys);
 		httpUtils.send(HttpMethod.GET,  AppContext.BASE_URL+AppContext.DOCROT_LOGIN, params, new RequestCallBack<String>() {
 			@Override
 	        public void onLoading(long total, long current, boolean isUploading) {
