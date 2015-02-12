@@ -848,7 +848,10 @@ int id doctorLoginLoginflag 0x7f050017
 int id doctorLoginNameEditText 0x7f050014
 int id doctorLoginPasswordEditText 0x7f050015
 int id doctorLoginRegestButton 0x7f05001a
+int id doctor_account 0x7f05001e
+int id doctor_name 0x7f05001d
 int id doctor_patient_medical_record_returnTextView 0x7f05000f
+int id doctor_photo 0x7f05001c
 int id download_addr_edit 0x7f05005c
 int id download_btn 0x7f05005d
 int id download_label 0x7f050056
@@ -885,10 +888,7 @@ int id more_button 0x7f05003c
 int id myselfmain_user_feedback 0x7f050020
 int id myselfmainabouttx 0x7f050022
 int id myselfmaincontactservice 0x7f050021
-int id myselfmainnameTextView 0x7f05001d
-int id myselfmainphoneTextView 0x7f05001e
 int id myselfmainphoto 0x7f05001b
-int id myselfmainphotoImageView 0x7f05001c
 int id myselfmainsettings 0x7f05001f
 int id ok 0x7f050050
 int id patient_list_view_img 0x7f050065

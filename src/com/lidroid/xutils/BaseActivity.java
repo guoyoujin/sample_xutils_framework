@@ -43,7 +43,7 @@ public class BaseActivity extends Activity {
         // 内容区域的布局
         private View contentView;
         public static HttpUtils httpUtils=null;
-        private Context context;
+        public Context context;
         public BitmapUtils bitmapUtils;
         public BitmapDisplayConfig bigPicDisplayConfig;
         public BitmapLoadCallBack<ImageView> bitmapLoadCallBack;

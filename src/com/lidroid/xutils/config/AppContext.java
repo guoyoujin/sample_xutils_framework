@@ -31,7 +31,7 @@ public class AppContext {
 	public static String DOCROT_PATIENTS="trfriends.json";
 	public static String DOCROT_RESEARCH="researchs/research_projects.json";
 	public static String DOCTOR_RESEARCH_DELETE="researchs/research_projects/destroy.json";
-	public static String version = "1.12";
+	public static String version = "1.14";
 	public static String sys = "android";
 	
 	public static void init_url(boolean flag){

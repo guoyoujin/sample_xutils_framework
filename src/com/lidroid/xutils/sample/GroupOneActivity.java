@@ -63,6 +63,7 @@ public class GroupOneActivity extends BaseActivity {
 				if(adapter==null){
 					adapter=new TestFoodListAdapter(getApplicationContext(), patient_list);
 				}
+				patient_tab_list_view.onRefreshComplete();
 				patient_tab_list_view.setAdapter(adapter);
 				break;
 			case 1:
@@ -79,6 +80,8 @@ public class GroupOneActivity extends BaseActivity {
 	@SuppressLint("NewApi")
 	public void iniView (){
 		patient_tab_list_view=(PullToRefreshListView) findViewById(R.id.patient_tab_list_view);
+		patient_tab_list_view.setScrollingWhileRefreshingEnabled(!patient_tab_list_view
+				.isScrollingWhileRefreshingEnabled());
 		patient_tab_list_view.setOnRefreshListener(new OnRefreshListener<ListView>() {
 			@Override
 			public void onRefresh(PullToRefreshBase<ListView> refreshView) {
@@ -87,7 +90,7 @@ public class GroupOneActivity extends BaseActivity {
 				// Update the LastUpdatedLabel
 				refreshView.getLoadingLayoutProxy().setLastUpdatedLabel(label);
 				// Do work to refresh the list here.
-				
+				http_get_doctor_Login();
 			}
 		});
 
@@ -96,6 +99,7 @@ public class GroupOneActivity extends BaseActivity {
 			@Override
 			public void onLastItemVisible() {
 				Toast.makeText(GroupOneActivity.this, "End of List!", Toast.LENGTH_SHORT).show();
+				http_get_doctor_Login();
 			}
 		});
 	}
@@ -104,7 +108,8 @@ public class GroupOneActivity extends BaseActivity {
 		RequestParams params=new RequestParams();
 		params.addBodyParameter("remember_token", AppContext.REMEMBER_TOKEN);
 		params.addBodyParameter("version",AppContext.version);
-		params.addBodyParameter("version",AppContext.version);
+		LogUtils.e("remember_token="+AppContext.REMEMBER_TOKEN);
+		params.addBodyParameter("sys",AppContext.sys);
 		httpUtils.send(HttpMethod.GET,  AppContext.BASE_URL+AppContext.DOCROT_PATIENTS, params, new RequestCallBack<String>() {
 	        public void onLoading(long total, long current, boolean isUploading) {
 	            
@@ -115,6 +120,7 @@ public class GroupOneActivity extends BaseActivity {
 				JSONObject jsonObject;
 				List<PatientBean> list_patient=new ArrayList<PatientBean>();
 				try {
+					LogUtils.e(doctor_patients);
 					jsonObject = new JSONObject(doctor_patients);
 					if (jsonObject.optBoolean("success")){
 						JSONArray jsonArray = jsonObject.getJSONArray("data");

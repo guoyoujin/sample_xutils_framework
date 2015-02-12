@@ -14,7 +14,6 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
-
 import com.lidroid.xutils.sample.R;
 
 
@@ -44,8 +43,8 @@ public class Dialog {
 	 * @param dialogClickListener 点击监听
 	 * @return
 	 */
-	public static android.app.Dialog showRadioDialog(Context context,String toast,final DialogClickListener dialogClickListener){
-		return ShowDialog(context,context.getResources().getString(R.string.pointMessage),toast,dialogClickListener,RADIO_DIALOG);
+	public static android.app.Dialog showRadioDialog(Context context,String toast,final DialogClickListener dialogClickListener,String left_btn,String right_btn){
+		return ShowDialog(context,context.getResources().getString(R.string.pointMessage),toast,dialogClickListener,RADIO_DIALOG,left_btn,left_btn);
 	}
 	/**
 	 * 创建一个选择对话框
@@ -54,8 +53,8 @@ public class Dialog {
 	 * @param dialogClickListener 点击监听
 	 * @return
 	 */
-	public static android.app.Dialog showSelectDialog(Context context,String toast,final DialogClickListener dialogClickListener){
-		return ShowDialog(context,context.getResources().getString(R.string.pointMessage),toast,dialogClickListener,SELECT_DIALOG);
+	public static android.app.Dialog showSelectDialog(Context context,String toast,final DialogClickListener dialogClickListener,String left_btn,String right_btn){
+		return ShowDialog(context,context.getResources().getString(R.string.pointMessage),toast,dialogClickListener,SELECT_DIALOG,left_btn,right_btn);
 	}
 	/**
 	 * 创建一个选择对话框
@@ -65,10 +64,10 @@ public class Dialog {
 	 * @param dialogClickListener 点击监听
 	 * @return
 	 */
-	public static android.app.Dialog showSelectDialog(Context context,String title,String toast,final DialogClickListener dialogClickListener){
-		return ShowDialog(context,title,toast,dialogClickListener,SELECT_DIALOG);
+	public static android.app.Dialog showSelectDialog(Context context,String title,String toast,final DialogClickListener dialogClickListener,String left_btn,String right_btn){
+		return ShowDialog(context,title,toast,dialogClickListener,SELECT_DIALOG,left_btn,right_btn);
 	}
-	private static android.app.Dialog ShowDialog(Context context,String title,String toast,final DialogClickListener dialogClickListener,int DialogType){ 
+	private static android.app.Dialog ShowDialog(Context context,String title,String toast,final DialogClickListener dialogClickListener,int DialogType,String left_btn,String right_btn){ 
 		final android.app.Dialog dialog=new android.app.Dialog(context, R.style.DialogStyle);
 		dialog.setCanceledOnTouchOutside(true);
 		dialog.setCancelable(true);
@@ -76,6 +75,8 @@ public class Dialog {
 		dialog.setContentView(view);
 		((TextView)view.findViewById(R.id.point)).setText(title);
 		((TextView)view.findViewById(R.id.toast)).setText(toast);
+		((TextView)view.findViewById(R.id.cancel)).setText(left_btn);
+		((TextView)view.findViewById(R.id.confirm)).setText(right_btn);
 		if(DialogType==RADIO_DIALOG){
 		}else{
 			view.findViewById(R.id.ok).setVisibility(View.GONE);

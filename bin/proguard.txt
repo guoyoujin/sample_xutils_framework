@@ -4,6 +4,10 @@
 # view res/layout/activity_login_guide_frist.xml #generated:4
 -keep class android.support.v4.view.ViewPager { <init>(...); }
 
+# view res/layout/activity_group_one.xml #generated:92
+# view res/layout/activity_group_there.xml #generated:41
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
 # view res/layout/patient_listview_item.xml #generated:14
 # view res/layout/patient_tab_list.xml #generated:28
 # view res/layout/xlist_view_reseach.xml #generated:12
@@ -25,10 +29,6 @@
 # view res/layout/activity_group_four.xml #generated:50
 # view res/layout/patient_listview_item.xml #generated:7
 -keep class com.lidroid.xutils.custom.view.RoundCornerImageViewSmall { <init>(...); }
-
-# view res/layout/activity_group_one.xml #generated:92
-# view res/layout/activity_group_there.xml #generated:41
--keep class com.lidroid.xutils.list.XListView { <init>(...); }
 
 # view AndroidManifest.xml #generated:28
 -keep class com.lidroid.xutils.sample.CrashShowActivity { <init>(...); }

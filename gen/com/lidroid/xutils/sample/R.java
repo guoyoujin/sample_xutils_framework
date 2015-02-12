@@ -1218,7 +1218,10 @@ containing a value of this type.
         public static final int doctorLoginNameEditText=0x7f050014;
         public static final int doctorLoginPasswordEditText=0x7f050015;
         public static final int doctorLoginRegestButton=0x7f05001a;
+        public static final int doctor_account=0x7f05001e;
+        public static final int doctor_name=0x7f05001d;
         public static final int doctor_patient_medical_record_returnTextView=0x7f05000f;
+        public static final int doctor_photo=0x7f05001c;
         public static final int download_addr_edit=0x7f05005c;
         public static final int download_btn=0x7f05005d;
         public static final int download_label=0x7f050056;
@@ -1255,10 +1258,7 @@ containing a value of this type.
         public static final int myselfmain_user_feedback=0x7f050020;
         public static final int myselfmainabouttx=0x7f050022;
         public static final int myselfmaincontactservice=0x7f050021;
-        public static final int myselfmainnameTextView=0x7f05001d;
-        public static final int myselfmainphoneTextView=0x7f05001e;
         public static final int myselfmainphoto=0x7f05001b;
-        public static final int myselfmainphotoImageView=0x7f05001c;
         public static final int myselfmainsettings=0x7f05001f;
         public static final int ok=0x7f050050;
         public static final int patient_list_view_img=0x7f050065;

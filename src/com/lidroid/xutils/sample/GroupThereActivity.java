@@ -47,8 +47,7 @@ public class GroupThereActivity extends BaseActivity {
 		hideTitleView();
 		initView();
 		http_get_research();
-	}
-	
+	}	
 	private Handler handler=new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
